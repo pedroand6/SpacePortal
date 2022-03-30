@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SpacePortal | Diagrama HR</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="logo.png">
+		<link rel="stylesheet" type="text/css" href="diagramapc.css">
+		<link rel="stylesheet" type="text/css" media="screen and (max-device-width:800px)" href="diagramacel.css">
+		<script type="text/javascript" src="homejs.js"></script>
+	</head>
+	<body onload="load()" id="body">
+		<div id="loading">
+			<div>
+				<img src="loading.gif" style="width: 200px;">
+			</div>
+		</div>
+		<nav>
+			<a href="index.html" class="aa">
+				<div class="logotipo">
+					<img src="logotipo.png" class="logogo">
+				</div>
+			</a>			
+			<ul class="tags" id="tags">
+				<li class="tag1">
+					<a href="#" class="astronomia"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21">
+						<a href="historia.html" class="l1"><li class="lista">Astronomia Antiga</li></a>
+						<a href="constelacao.html" class="l1"><li class="lista">Constelações</li></a>
+						<a href="estacao.html" class="l1"><li class="lista">Estações do Ano</li></a>
+						<a href="antigos.html" class="l1"><li class="lista">Antigos astrônomos</li></a>
+						<a href="telescopio.html" class="l1"><li class="lista">Instrumentos</li></a>
+						<a href="fases.html" class="l1"><li class="lista">Fases da Lua</li></a>
+						<a href="eclipse.html" class="l1"><li class="lista">Eclipses</li></a>
+						<a href="solar.html" class="l1"><li class="lista">Sistema Solar</li></a>
+						<a href="escala.html" class="l1"><li class="lista">Escala do Universo</li></a>
+						<a href="tera.html" class="l1"><li class="lista">Terra</li></a>
+					</ul>
+				</li>
+				<li class="tag2">
+					<a href="#" class="astrofísica"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22">
+						<a href="doppler.html" class="l1"><li class="lista">Efeito Doppler</li></a>
+						<a href="mare.html" class="l1"><li class="lista">Efeito de Maré</li></a>
+						<a href="kepler.html" class="l1"><li class="lista">Leis de Kepler</li></a>
+						<a href="eletromagnetismo.html" class="l1"><li class="lista">Eletromagnetismo</li></a>
+						<a href="bigbang.html" class="l1"><li class="lista">Big Bang</li></a>
+						<a href="classificacao.html" class="l1"><li class="lista">Classificação Espectral</li></a>
+						<a href="diagrama.html" class="l1"><li class="lista">Diagrama HR</li></a>
+					</ul>
+				</li>
+			</ul>
+			<ul class="tagsa" id="tagsa">
+				<li class="tag1a">
+					<a href="#" class="astronomia" id="aston" onclick="click2();"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21a" id="menu21a">
+						<a href="historia.html" class="l1a"><li class="listaa">Astronomia Antiga</li></a>
+						<a href="constelacao.html" class="l1a"><li class="listaa">Constelações</li></a>
+						<a href="estacao.html" class="l1a"><li class="listaa">Estações do Ano</li></a>
+						<a href="antigos.html" class="l1a"><li class="listaa">Antigos astrônomos</li></a>
+						<a href="telescopio.html" class="l1a"><li class="listaa">Instrumentos</li></a>
+						<a href="fases.html" class="l1a"><li class="listaa">Fases da Lua</li></a>
+						<a href="eclipse.html" class="l1a"><li class="listaa">Eclipses</li></a>
+						<a href="solar.html" class="l1a"><li class="listaa">Sistema Solar</li></a>
+						<a href="escala.html" class="l1a"><li class="listaa">Escala do Universo</li></a>
+						<a href="tera.html" class="l1a"><li class="listaa">Terra</li></a>
+					</ul>
+				</li>
+				<li class="tag2a">
+					<a href="#" class="astrofísica" id="astof" onclick="click1();"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22a" id="menu22a">
+						<a href="doppler.html" class="l1a"><li class="listaa">Efeito Doppler</li></a>
+						<a href="mare.html" class="l1a"><li class="listaa">Efeito de Maré</li></a>
+						<a href="kepler.html" class="l1a"><li class="listaa">Leis de Kepler</li></a>
+						<a href="eletromagnetismo.html" class="l1a"><li class="listaa">Eletromagnetismo</li></a>
+						<a href="bigbang.html" class="l1a"><li class="listaa">Big Bang</li></a>
+						<a href="classificacao.html" class="l1a"><li class="listaa">Classificação Espectral</li></a>
+						<a href="diagrama.html" class="l1a"><li class="listaa">Diagrama HR</li></a>
+					</ul>
+				</li>
+			</ul>
+			<a href="#" class="icon" onclick="verificaClick();">
+				&equiv;
+			</a>
+		</nav>
+		<main>
+			<div class="fundo">
+				<div class="inicio">
+					<div class="scro">
+						<a href="#conteudo"><img src="seta.png" class="scrollseta"></a>
+					</div>
+				</div>
+				<div class="final" id="conteudo">
+					<div class="titu">
+						<span class="tito">Diagrama Hertzsprung-Russell</span>
+					</div>
+					<div class="artigo">
+						<div class="text">
+							<strong>No que se baseia </strong><br>
+							<div class="image">
+								<img src="hrr.png" class="imagem" alt="Diagrama HR">
+								<p class="legenda">Diagrama Hertzsprung-Russell</p>
+							</div>
+							<p class="texto">O diagrama de Hertzsprung-Russell, ou apenas diagrama HR, se baseia em relacionar a luminosidade das estrelas com a sua respectiva <a href="classificacao.html">classificação espectral</a>, ou seja, com a sua temperatura. Com este diagrama, é possível perceber coisas muito importantes para o entendimento das estrelas. Nele, a maior parte das estrelas estão localizadas numa faixa na diagonal, que vai do vermelho, frio, e com baixa luminosidade, até o azul, quente, e com alta luminosidade, chamada de sequência principal. Enquanto isso, tem algumas estrelas, como as gigantes e supergigantes, com alta luminosidade, que se espalham pelo topo do diagrama, e outras estrelas como as anãs brancas, que se localizam na esquerda inferior do gráfico.</p><br>
+							<strong>Como surgiu </strong><br>
+							<p class="texto">Após a catalogação das estrelas baseadas em seus espectros de luz, algumas estudiosas importantes, como Maury, e depois dela, Annie Jump Cannon, estavam curiosas com a variação da largura das <a href="eletromagnetismo.html">linhas espectrais</a> entre algumas estrelas que possuiam a mesma classificação espectral. Annie foi muito importante para a ordenação da classificação espectral que conhecemos atualmente, sendo ela dividida em O, B, A, F, G, K e M. Apenas alguns anos mais tarde, esse mistério envolvendo a largura das linhas espectrais, foi resolvido por Ejnar Hertzsprung, que usou de técnicas astronômicas para classificar algumas estrelas relacionando a sua classificação espectral, com a sua magnitude absoluta, ou da forma como foi, um reflexo dela. Hertzsprung classificou as estrelas do aglomerado das Plêiades no seu diagrama com uma precisão relativamente alta, já que como as estrelas no aglomerado possuiam uma distância da Terra bem parecida, a sua magnitude aparente se transformava em um reflexo de sua magnitude absoluta, tornando a classificação, muito mais fácil e muito mais precisa. Com essa catalogação dentro do seu diagrama, Hertzsprung deduziu que as linhas espectrais mais estreitas, estavam relacionadas com as estrelas mais brilhantes, enquanto as linhas espectrais mais largas eram de estrelas com uma luminosidade menor.<br><br>
+							Mais tarde, um homem chamado Henry Norris Russell, com a informação precisa das distâncias e da luminosidade de muitas estrelas, feitas principalmente por paralaxe, classificou uma quantidade muito maior de estrelas dentro do diagrama, tendo elas, espectros e luminosidades mais variadas do que as classificadas por Ejnar Hertzsprung. Assim, Russel foi importante, pois a partir da interpretação do diagrama com as informações obtidas por ele, foi possível perceber vários padrões, que foram descritos no tópico acima, podendo assim, descobrir muitas propriedades da vida das estrelas, até então desconhecidas.</p><br>
+							<strong>Bibliografia > </strong><br>
+							<p class="texto">
+								<a href="http://astro.if.ufrgs.br/estrelas/node2.htm" class="links">http://astro.if.ufrgs.br/</a><br>
+								<a href="http://professor.ufabc.edu.br/~pieter.westera/AstroAula08.pdf" class="links">http://professor.ufabc.edu.br/</a><br>
+								SPARROW, Giles. 50 Ideias de Astronomia que você precisa conhecer. 1. Ed. São Paulo: Planeta, 2018.<br>
+							</p>
+							<br><br><br><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="futa">
+				<div class="cope">
+					<img src="logotipo.png" class="copylogo">
+					<span class="copy">&copy; SpacePortal 2020<br><br>
+						<a href="recom.html">Recomendações</a><br></span>
+				</div>
+				<div class="coluns">
+					<div class="colun1">
+						<span class="tit1">Astronomia</span><br>
+						<span class="col1"><a href="historia.html">Astronomia da Antiguidade</a><br><a href="fases.html">Fases da Lua</a><br><a href="constelacao.html">Constelações</a><br><a href="eclipse.html">Eclipses</a><br><a href="estacao.html">Estações do ano</a><br><a href="solar.html">Sistema Solar</a><br><a href="antigos.html">Astrônomos da antiguidade</a><br><a href="escala.html">Escala do Universo</a><br><a href="telescopio.html">Instrumentos de observação</a><br><a href="tera.html">Terra</a></span>
+					</div>
+					<div class="colun2">
+						<span class="tit2">Astrofísica</span><br>
+						<span class="col2"><a href="doppler.html">Efeito Doppler</a><br><a href="mare.html">Efeito de Maré</a><br><a href="kepler.html">Leis de Kepler</a><br><a href="eletromagnetismo.html">Espectro eletromagnético</a><br><a href="bigbang.html">Big Bang</a><br><a href="classificacao.html">Classificação Espectral</a><br><a href="diagrama.html">Diagrama HR</a></span>
+					</div>
+					<div class="colun3">
+						<span class="tit3">Contato</span><br>
+						<span class="col3"><a href="https://twitter.com/mousedesvio">Twitter</a><br><a href="https://www.instagram.com/pedroand6/">Instagram</a><br><a href="mailto:redbrickcar2@gmail.com">redbrickcar2@gmail.com</a><br></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Bibliotecas Javascript aqui -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script type="text/javascript" src="https://getbootstrap.com.br/docs/4.1/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

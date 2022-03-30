@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SpacePortal | Estações do Ano</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="logo.png">
+		<link rel="stylesheet" type="text/css" href="estacaopc.css">
+		<link rel="stylesheet" type="text/css" media="screen and (max-device-width:800px)" href="estacaocel.css">
+		<script type="text/javascript" src="homejs.js"></script>
+	</head>
+	<body onload="load()" id="body">
+		<div id="loading">
+			<div>
+				<img src="loading.gif" style="width: 200px;">
+			</div>
+		</div>
+		<nav>
+			<a href="index.html" class="aa">
+				<div class="logotipo">
+					<img src="logotipo.png" class="logogo">
+				</div>
+			</a>			
+			<ul class="tags" id="tags">
+				<li class="tag1">
+					<a href="#" class="astronomia"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21">
+						<a href="historia.html" class="l1"><li class="lista">Astronomia Antiga</li></a>
+						<a href="constelacao.html" class="l1"><li class="lista">Constelações</li></a>
+						<a href="estacao.html" class="l1"><li class="lista">Estações do Ano</li></a>
+						<a href="antigos.html" class="l1"><li class="lista">Antigos astrônomos</li></a>
+						<a href="telescopio.html" class="l1"><li class="lista">Instrumentos</li></a>
+						<a href="fases.html" class="l1"><li class="lista">Fases da Lua</li></a>
+						<a href="eclipse.html" class="l1"><li class="lista">Eclipses</li></a>
+						<a href="solar.html" class="l1"><li class="lista">Sistema Solar</li></a>
+						<a href="escala.html" class="l1"><li class="lista">Escala do Universo</li></a>
+						<a href="tera.html" class="l1"><li class="lista">Terra</li></a>
+					</ul>
+				</li>
+				<li class="tag2">
+					<a href="#" class="astrofísica"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22">
+						<a href="doppler.html" class="l1"><li class="lista">Efeito Doppler</li></a>
+						<a href="mare.html" class="l1"><li class="lista">Efeito de Maré</li></a>
+						<a href="kepler.html" class="l1"><li class="lista">Leis de Kepler</li></a>
+						<a href="eletromagnetismo.html" class="l1"><li class="lista">Eletromagnetismo</li></a>
+						<a href="bigbang.html" class="l1"><li class="lista">Big Bang</li></a>
+						<a href="classificacao.html" class="l1"><li class="lista">Classificação Espectral</li></a>
+						<a href="diagrama.html" class="l1"><li class="lista">Diagrama HR</li></a>
+					</ul>
+				</li>
+			</ul>
+			<ul class="tagsa" id="tagsa">
+				<li class="tag1a">
+					<a href="#" class="astronomia" id="aston" onclick="click2();"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21a" id="menu21a">
+						<a href="historia.html" class="l1a"><li class="listaa">Astronomia Antiga</li></a>
+						<a href="constelacao.html" class="l1a"><li class="listaa">Constelações</li></a>
+						<a href="estacao.html" class="l1a"><li class="listaa">Estações do Ano</li></a>
+						<a href="antigos.html" class="l1a"><li class="listaa">Antigos astrônomos</li></a>
+						<a href="telescopio.html" class="l1a"><li class="listaa">Instrumentos</li></a>
+						<a href="fases.html" class="l1a"><li class="listaa">Fases da Lua</li></a>
+						<a href="eclipse.html" class="l1a"><li class="listaa">Eclipses</li></a>
+						<a href="solar.html" class="l1a"><li class="listaa">Sistema Solar</li></a>
+						<a href="escala.html" class="l1a"><li class="listaa">Escala do Universo</li></a>
+						<a href="tera.html" class="l1a"><li class="listaa">Terra</li></a>
+					</ul>
+				</li>
+				<li class="tag2a">
+					<a href="#" class="astrofísica" id="astof" onclick="click1();"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22a" id="menu22a">
+						<a href="doppler.html" class="l1a"><li class="listaa">Efeito Doppler</li></a>
+						<a href="mare.html" class="l1a"><li class="listaa">Efeito de Maré</li></a>
+						<a href="kepler.html" class="l1a"><li class="listaa">Leis de Kepler</li></a>
+						<a href="eletromagnetismo.html" class="l1a"><li class="listaa">Eletromagnetismo</li></a>
+						<a href="bigbang.html" class="l1a"><li class="listaa">Big Bang</li></a>
+						<a href="classificacao.html" class="l1a"><li class="listaa">Classificação Espectral</li></a>
+						<a href="diagrama.html" class="l1a"><li class="listaa">Diagrama HR</li></a>
+					</ul>
+				</li>
+			</ul>
+			<a href="#" class="icon" onclick="verificaClick();">
+				&equiv;
+			</a>
+		</nav>
+		<main>
+			<div class="fundo">
+				<div class="inicio">
+					<div class="scro">
+						<a href="#conteudo"><img src="seta.png" class="scrollseta"></a>
+					</div>
+				</div>
+				<div class="final" id="conteudo">
+					<div class="titu">
+						<span class="tito">Estações do Ano</span>
+					</div>
+					<div class="artigo">
+						<div class="text">
+							<strong>O que define elas</strong><br>
+							<div class="image">
+								<img src="estacao.png" class="imagem" alt="Posições da Terra ao redor do Sol">
+								<p class="legenda">Ilustração da órbita da Terra ao redor do Sol.</p>
+							</div>
+							<p class="texto">Muitas pessoas pensam, errôneamente que as estações são definidas pela excentricidade da órbita da <a href="tera.html">Terra</a> em relação ao Sol. Na realidade, mesmo que a a excentricidade da órbita seja um fator que altera, mesmo que minimamente, o clima na Terra, não é ela que define as estações, e sim a inclinação no eixo terrestre. É possível perceber na imagem ao lado, que por conta dessa inclinação, 4 estações são definidas, e elas mudam de acordo com o hemisfério. Isso ocorre pois a Terra, em momentos determinados, fica com um dos hemisférios inclinados diretamente para o Sol, enquanto o outro hemisfério fica inclinado para a outra direção, sem receber tanta energia solar assim. Diferentemente, também há outros momentos determinados em que a Terra tem o seu eixo inclinado de forma que os dois hemisférios recebem a mesma quantidade de energia do Sol.</p><br>
+							<strong>Efeitos das estações do ano</strong><br>
+							<p class="texto">As estações do ano possuem diversos efeitos no clima e na vida na Terra. De forma geral, elas afetam a duração dos dias e das noites, da amplitude térmica e dos índices pluviométricos. No verão, os dias são mais longos que as noites, pois a inclinação no eixo fazem com que a luz do Sol incida por um tempo maior naquele hemisfério. No verão, também há uma amplitude térmica maior, com uma temperatura maior, e uma pluviosidade maior. No inverno, o clima é mais seco, com baixos índices pluviométricos, as noites duram mais que os dias, e a temperatura é mais baixa. No outono, os dias tem a mesma duração das noites, porém tendendo a noites mais longas com o passar do tempo, o clima é mais seco, e tende a temperaturas mais baixas. Nessa estação, as folhas de algumas árvores tendem a cair. Na primavera, as noites tem a mesma duração dos dias, porém tendendo a dias mais longos, com o passar do tempo, os índices pluviométricos também tendem a aumentar, o clima é mais ameno, e as temperaturas vão aumentando. Na primaveram, também é a estação em que as flores desabrocham.</p><br>
+							<strong>Estações no hemisfério norte</strong><br>
+							<p class="texto">
+								> Verão: Inicia no solstício de verão, no dia 21 de junho, e termina no equinócio de outono, no dia 22 de setembro.<br>
+								> Outono: Inicia no equinócio de outono, no dia 22 de setembro, e termina no solstício de inverno, no dia 21 de dezembro.<br>
+								> Inverno: Inicia no solstício de inverno, no dia 21 de dezembro, e termina no equinócio de primavera, no dia 20 de março.<br>
+								> Primavera: Inicia no equinócio de primavera, no dia 20 de março, e termina no solstício de verão, no dia 21 de junho.<br>
+							</p><br>
+							<strong>Estações no hemisfério sul </strong><br>
+							<p class="texto">
+								> Verão: Inicia no solstício de verão, no dia 21 de dezembro, e termina no equinócio de outono, no dia 20 de março.<br>
+								> Outono: Inicia no equinócio de outono, no dia 20 de março, e termina no solstício de inverno, no dia 21 de junho.<br>
+								> Inverno: Inicia no solstício de inverno, no dia 21 de junho, e termina no equinócio de primavera, no dia 22 de setembro.<br>
+								> Primavera: Inicia no equinócio de primavera, dia 22 de setembro, e termina no solstício de verão, dia 21 de dezembro.<br>
+							</p><br>
+							<strong>Estações nos polos </strong><br>
+							<p class="texto">Por conta da inclinação do eixo da Terra, os polos recebem luz solar durante apenas 6 meses, então, nos polos terrestres, é como se houvessem apenas duas estações, a do verão e a do inverno. Durante o inverno, é sempre noite, o Sol não aparece no céu, e durante o verão, é sempre dia, e o Sol está sempre no céu, nunca se pondo no céu, e gerando um efeito muito conhecido, chamado popularmente de "sol da meia-noite". Mesmo no verão, as temperaturas dos polos são baixas, isso porque mesmo que o polo esteja inclinado para o Sol, a incidência de raios solares é baixa, então os efeitos das estações nos polos não são tão significativos com relação ao clima.</p><br>
+							<strong>Bibliografia </strong><br>
+							<p class="texto">
+								<a href="https://escola.britannica.com.br/artigo/esta%C3%A7%C3%A3o-do-ano/482476" class="links">https://escola.britannica.com.br/</a><br>
+								<a href="https://pt.khanacademy.org/science/1-ano/terra-e-universo-1-ano/relogios-biologicos/v/estacoes-do-ano" class="links">https://pt.khanacademy.org/</a><br>
+								<a href="https://www.youtube.com/watch?v=WQgslesQhjM&list=PL_my-TwWaWBi1NAEhmKzv0U0jAbyh4d7o&index=2&ab_channel=Astrof%C3%ADsicaparaTodos" class="links">Vídeo do curso Astrofísica para Todos</a><br>
+							</p>
+							<br><br><br><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="futa">
+				<div class="cope">
+					<img src="logotipo.png" class="copylogo">
+					<span class="copy">&copy; SpacePortal 2020<br><br>
+						<a href="recom.html">Recomendações</a><br></span>
+				</div>
+				<div class="coluns">
+					<div class="colun1">
+						<span class="tit1">Astronomia</span><br>
+						<span class="col1"><a href="historia.html">Astronomia da Antiguidade</a><br><a href="fases.html">Fases da Lua</a><br><a href="constelacao.html">Constelações</a><br><a href="eclipse.html">Eclipses</a><br><a href="estacao.html">Estações do ano</a><br><a href="solar.html">Sistema Solar</a><br><a href="antigos.html">Astrônomos da antiguidade</a><br><a href="escala.html">Escala do Universo</a><br><a href="telescopio.html">Instrumentos de observação</a><br><a href="tera.html">Terra</a></span>
+					</div>
+					<div class="colun2">
+						<span class="tit2">Astrofísica</span><br>
+						<span class="col2"><a href="doppler.html">Efeito Doppler</a><br><a href="mare.html">Efeito de Maré</a><br><a href="kepler.html">Leis de Kepler</a><br><a href="eletromagnetismo.html">Espectro eletromagnético</a><br><a href="bigbang.html">Big Bang</a><br><a href="classificacao.html">Classificação Espectral</a><br><a href="diagrama.html">Diagrama HR</a></span>
+					</div>
+					<div class="colun3">
+						<span class="tit3">Contato</span><br>
+						<span class="col3"><a href="https://twitter.com/mousedesvio">Twitter</a><br><a href="https://www.instagram.com/pedroand6/">Instagram</a><br><a href="mailto:redbrickcar2@gmail.com">redbrickcar2@gmail.com</a><br></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Bibliotecas Javascript aqui -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script type="text/javascript" src="https://getbootstrap.com.br/docs/4.1/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

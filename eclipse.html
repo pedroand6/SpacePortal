@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SpacePortal | Eclipses</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="logo.png">
+		<link rel="stylesheet" type="text/css" href="eclipsepc.css">
+		<link rel="stylesheet" type="text/css" media="screen and (max-device-width:800px)" href="eclipsecel.css">
+		<script type="text/javascript" src="homejs.js"></script>
+	</head>
+	<body onload="load()" id="body">
+		<div id="loading">
+			<div>
+				<img src="loading.gif" style="width: 200px;">
+			</div>
+		</div>
+		<nav>
+			<a href="index.html" class="aa">
+				<div class="logotipo">
+					<img src="logotipo.png" class="logogo">
+				</div>
+			</a>			
+			<ul class="tags" id="tags">
+				<li class="tag1">
+					<a href="#" class="astronomia"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21">
+						<a href="historia.html" class="l1"><li class="lista">Astronomia Antiga</li></a>
+						<a href="constelacao.html" class="l1"><li class="lista">Constelações</li></a>
+						<a href="estacao.html" class="l1"><li class="lista">Estações do Ano</li></a>
+						<a href="antigos.html" class="l1"><li class="lista">Antigos astrônomos</li></a>
+						<a href="telescopio.html" class="l1"><li class="lista">Instrumentos</li></a>
+						<a href="fases.html" class="l1"><li class="lista">Fases da Lua</li></a>
+						<a href="eclipse.html" class="l1"><li class="lista">Eclipses</li></a>
+						<a href="solar.html" class="l1"><li class="lista">Sistema Solar</li></a>
+						<a href="escala.html" class="l1"><li class="lista">Escala do Universo</li></a>
+						<a href="tera.html" class="l1"><li class="lista">Terra</li></a>
+					</ul>
+				</li>
+				<li class="tag2">
+					<a href="#" class="astrofísica"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22">
+						<a href="doppler.html" class="l1"><li class="lista">Efeito Doppler</li></a>
+						<a href="mare.html" class="l1"><li class="lista">Efeito de Maré</li></a>
+						<a href="kepler.html" class="l1"><li class="lista">Leis de Kepler</li></a>
+						<a href="eletromagnetismo.html" class="l1"><li class="lista">Eletromagnetismo</li></a>
+						<a href="bigbang.html" class="l1"><li class="lista">Big Bang</li></a>
+						<a href="classificacao.html" class="l1"><li class="lista">Classificação Espectral</li></a>
+						<a href="diagrama.html" class="l1"><li class="lista">Diagrama HR</li></a>
+					</ul>
+				</li>
+			</ul>
+			<ul class="tagsa" id="tagsa">
+				<li class="tag1a">
+					<a href="#" class="astronomia" id="aston" onclick="click2();"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21a" id="menu21a">
+						<a href="historia.html" class="l1a"><li class="listaa">Astronomia Antiga</li></a>
+						<a href="constelacao.html" class="l1a"><li class="listaa">Constelações</li></a>
+						<a href="estacao.html" class="l1a"><li class="listaa">Estações do Ano</li></a>
+						<a href="antigos.html" class="l1a"><li class="listaa">Antigos astrônomos</li></a>
+						<a href="telescopio.html" class="l1a"><li class="listaa">Instrumentos</li></a>
+						<a href="fases.html" class="l1a"><li class="listaa">Fases da Lua</li></a>
+						<a href="eclipse.html" class="l1a"><li class="listaa">Eclipses</li></a>
+						<a href="solar.html" class="l1a"><li class="listaa">Sistema Solar</li></a>
+						<a href="escala.html" class="l1a"><li class="listaa">Escala do Universo</li></a>
+						<a href="tera.html" class="l1a"><li class="listaa">Terra</li></a>
+					</ul>
+				</li>
+				<li class="tag2a">
+					<a href="#" class="astrofísica" id="astof" onclick="click1();"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22a" id="menu22a">
+						<a href="doppler.html" class="l1a"><li class="listaa">Efeito Doppler</li></a>
+						<a href="mare.html" class="l1a"><li class="listaa">Efeito de Maré</li></a>
+						<a href="kepler.html" class="l1a"><li class="listaa">Leis de Kepler</li></a>
+						<a href="eletromagnetismo.html" class="l1a"><li class="listaa">Eletromagnetismo</li></a>
+						<a href="bigbang.html" class="l1a"><li class="listaa">Big Bang</li></a>
+						<a href="classificacao.html" class="l1a"><li class="listaa">Classificação Espectral</li></a>
+						<a href="diagrama.html" class="l1a"><li class="listaa">Diagrama HR</li></a>
+					</ul>
+				</li>
+			</ul>
+			<a href="#" class="icon" onclick="verificaClick();">
+				&equiv;
+			</a>
+		</nav>
+		<main>
+			<div class="fundo">
+				<div class="inicio">
+					<div class="scro">
+						<a href="#conteudo"><img src="seta.png" class="scrollseta"></a>
+					</div>
+				</div>
+				<div class="final" id="conteudo">
+					<div class="titu">
+						<span class="tito">Eclipses</span>
+					</div>
+					<br><br>
+					<div class="artigo">
+						<div class="text">
+							<strong>O que são </strong><br>
+							<div class="image">
+								<img src="penumbra.png" class="imagem" alt="Eclipse Lunar">
+								<p class="legenda">Ilustração de um eclipse lunar.</p>
+							</div>
+							<p class="texto">Um eclipse é quando um corpo celeste entra na frente de outro, em direção à uma fonte de luz, projetando sua sombra diretamente sobre o corpo que ficou atrás. Por conta disso, o corpo localizado atrás do outro, não recebe luz em determinado ponto onde a sombra foi projetada. Os exemplos mais famosos de eclipses são o eclipse solar, e o eclipse lunar. No eclipse solar, a Lua fica entre a Terra e o Sol, bloqueando a luz do Sol no local onde sua sombra foi projetada. No eclipse lunar, a <a href="tera.html">Terra</a> fica entre a Lua e o Sol, bloqueando a luz solar de chegar até a Lua no local da projeção da sombra da Terra.</p><br>
+							<strong>Umbra e penumbra </strong><br>
+							<p class="texto">Para entender como funcionam os eclipses, é bom entender melhor os conceitos de umbra e penumbra. A umbra é a parte da sombra onde a luz da fonte não chega, sendo a parte mais escura. Já a penumbra, é a parte da sombra onde parte da luz da fonte chega, sendo a parte menos escura da sombra. Pode ocorrer da Lua estar dentro da penumbra da sombra da Terra, sem bloquear totalmente a luz vinda da fonte, de chegar na Lua, num eclipse lunar, e quando isso ocorre, damos o nome de eclipse lunar penumbral. Pode ocorrer, também, de uma região da Terra estar na penumbra da sombra da Lua, num eclipse solar, e assim, nessa região, ocorrerá um eclipse solar parcial.</p><br>
+							<strong>Tipos de eclipses </strong><br>
+							<p class="texto">
+								> Eclipse solar total: Ocorre quando a Lua está entre o Sol e a Terra, e a umbra da sombra da Lua atinge alguma região da Terra. Nesse caso, o eclipse solar total ocorre na região da umbra, e na região da penumbra, ocorre um eclipse solar parcial.<br>
+								> Eclipse lunar total: Ocorre quando a Terra está entre o Sol e a Lua, e a umbra da Terra cobre totalmente a Lua. Esse tipo de eclipse, diferente do eclise solar total, é possível ser visto por todos que enxergam a Lua no momento do eclipse.<br>
+								> Eclipse solar parcial: Ocorre quando a Lua está entre o Sol e a Terra, e a penumbra da sombra da Lua é projeta em alguma região da Terra. Nesse caso, esse tipo de eclipse pode ser observado ao mesmo tempo que um eclipse solar total ocorre em outra região da Terra, ou não, quando apenas a penumbra, e não a umbra da Lua, atinge a Terra.<br>
+								> Eclipse lunar parcial: Ocorre quando a Terra está entre o Sol e a Lua, e a Lua se encontra entre a umbra e a penumbra da sombra da Terra.<br>
+								> Eclipse solar anular: Ocorre quando a Lua está entre o Sol e a Terra, e ela se encontra no apogeu de sua órbita, assim, o seu diâmetro angular (o diâmetro da Lua vista aqui da Terra) é menor que o diâmetro angular do Sol, e mesmo na região da umbra da sombra da Lua, ela não cobre totalmente a forma do Sol, deixando um pequeno anel aparecendo nas bordas do Sol.<br>
+								> Eclipse lunar penumbral: Ocorre quando a Terra está entre o Sol e a Lua, e a Lua se encontra na penumbra da sombra da Terra. Esse tipo de eclipse não afeta tanto no brilho da Lua, por isso é difícil de se identificar.<br>
+							</p><br>
+							<strong>Periodicidade </strong><br>
+							<p class="texto">
+								Há uma periodicidade que pode ser prevista, nos eclipses. O plano orbital da Lua é inclinado em 5,2° em relação ao plano orbital da Terra (o plano da eclíptica). Por conta dessa inclinação, não ocorrem eclipses a cada Lua cheia e Lua nova, mesmo assim, como o plano orbital da Lua varia sua direção, em alguns momentos, ele se encontra com o plano da eclítica em uma linha de intersecção das duas, chamada de linha dos nodos. Por conta disso, é possível prever que pelo menos 2 eclipses aconteçam por ano. Quando se trata dessa periodicidade, também é possível prever que uma temporada de eclipse (um período de tempo em que a linha dos nodos se alinha com o Sol e a Terra) ocorre a cada 173 dias. Estas temporadas possuem de 31 a 38 dias, e nelas, um eclipse ocorre sempre que a Lua cruza ou passa bem perto do nodo. Além disso, dentro de um ano, pode haver de 2 a 7 eclipses, e também, que este ciclo da linha de nodos se repete a cada 18,6 anos.
+							</p><br>
+							<strong>Duração </strong><br>
+							<p class="texto">A duração dos eclipses varia de acordo com o tamanho da projeção da sombra, com a velocidade da Lua dentro da sua órbita, em relação a Terra, e também, no caso de eclipses solares, a rotação da Terra. Dependendo do tipo de eclipse, há uma duração diferente. Para eclipses solares totais, a duração máxima da sua totalidade, ou seja, quando a Lua cobre completamente o Sol, é de 7,5 minutos. Já, com eclipses lunares, como a sombra da Terra é bem maior que a Lua, a cobrindo completamente, a duração máxima desse eclipse é de 3,8 horas, sendo que a duração máxima da sua fase total, ou seja, quando a Lua está completamente atrás da umbra da Terra, é de 1,7 horas.</p><br>
+							<strong>Precauções </strong>
+							<p class="texto">
+								Como é sempre bom ter cuidado, leve sempre em consideração que o Sol, mesmo em um eclipse, não pode ser observado diretamente durante muito tempo, e a observação de um eclipse dessa forma, pode prejudicar muito o olho, podendo até cegá-lo. Por isso, se for assistir à algum eclipse, use equipamentos especiais, feitos apenas para isso, ou use até mesmo de formas alternativas para assistir, das quais existem várias, como por exemplo, assistir o reflexo da sombra do eclipse numa parede, com um espelho.
+							</p><br>
+							<strong>Bibliografia </strong><br>
+							<p class="texto">
+								<a href="http://astro.if.ufrgs.br/eclipses/eclipse.htm" class="links">http://astro.if.ufrgs.br/</a><br>
+								<a href="http://www.ciencias.seed.pr.gov.br/modules/conteudo/conteudo.php?conteudo=268" class="links">http://www.ciencias.seed.pr.gov.br/</a><br>
+								<a href="https://www.iag.usp.br/siae98/fenomastro/eclipses.htm" class="links">https://www.iag.usp.br/</a><br>
+							</p>
+							<br><br><br><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="futa">
+				<div class="cope">
+					<img src="logotipo.png" class="copylogo">
+					<span class="copy">&copy; SpacePortal 2020<br><br>
+						<a href="recom.html">Recomendações</a><br></span>
+				</div>
+				<div class="coluns">
+					<div class="colun1">
+						<span class="tit1">Astronomia</span><br>
+						<span class="col1"><a href="historia.html">Astronomia da Antiguidade</a><br><a href="fases.html">Fases da Lua</a><br><a href="constelacao.html">Constelações</a><br><a href="eclipse.html">Eclipses</a><br><a href="estacao.html">Estações do ano</a><br><a href="solar.html">Sistema Solar</a><br><a href="antigos.html">Astrônomos da antiguidade</a><br><a href="escala.html">Escala do Universo</a><br><a href="telescopio.html">Instrumentos de observação</a><br><a href="tera.html">Terra</a></span>
+					</div>
+					<div class="colun2">
+						<span class="tit2">Astrofísica</span><br>
+						<span class="col2"><a href="doppler.html">Efeito Doppler</a><br><a href="mare.html">Efeito de Maré</a><br><a href="kepler.html">Leis de Kepler</a><br><a href="eletromagnetismo.html">Espectro eletromagnético</a><br><a href="bigbang.html">Big Bang</a><br><a href="classificacao.html">Classificação Espectral</a><br><a href="diagrama.html">Diagrama HR</a></span>
+					</div>
+					<div class="colun3">
+						<span class="tit3">Contato</span><br>
+						<span class="col3"><a href="https://twitter.com/mousedesvio">Twitter</a><br><a href="https://www.instagram.com/pedroand6/">Instagram</a><br><a href="mailto:redbrickcar2@gmail.com">redbrickcar2@gmail.com</a><br></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Bibliotecas Javascript aqui -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script type="text/javascript" src="https://getbootstrap.com.br/docs/4.1/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

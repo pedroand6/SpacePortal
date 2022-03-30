@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SpacePortal | Astrology</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="logo.png">
+		<link rel="stylesheet" type="text/css" href="zodiacopc.css">
+		<link rel="stylesheet" type="text/css" media="screen and (max-device-width:800px)" href="zodiacocel.css">
+		<script type="text/javascript" src="homejs.js"></script>
+	</head>
+	<body onload="load()" id="body">
+		<div id="loading">
+			<div>
+				<img src="loading.gif" style="width: 200px;">
+			</div>
+		</div>
+		<nav>
+			<a href="index.html" class="aa">
+				<div class="logotipo">
+					<img src="logotipo.png" class="logogo">
+				</div>
+			</a>			
+			<ul class="tags" id="tags">
+				<li class="tag1">
+					<a href="#" class="astronomia"><p class="astron">Astronomy <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21">
+						<a href="historia.html" class="l1"><li class="lista">Old Astronomy</li></a>
+						<a href="constelacao.html" class="l1"><li class="lista">Constellations</li></a>
+						<a href="estacao.html" class="l1"><li class="lista">Seasons of the Year</li></a>
+						<a href="antigos.html" class="l1"><li class="lista">Old Astronomers</li></a>
+						<a href="telescopio.html" class="l1"><li class="lista">Instruments</li></a>
+						<a href="fases.html" class="l1"><li class="lista">Moon Phases</li></a>
+						<a href="eclipse.html" class="l1"><li class="lista">Eclipses</li></a>
+						<a href="solar.html" class="l1"><li class="lista">Solar System</li></a>
+						<a href="escala.html" class="l1"><li class="lista">Scale of the Universe</li></a>
+						<a href="tera.html" class="l1"><li class="lista">Earth</li></a>
+					</ul>
+				</li>
+				<li class="tag2">
+					<a href="#" class="astrofísica"><p class="astrof">Astrophysics <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22">
+						<a href="doppler.html" class="l1"><li class="lista">Doppler Effect</li></a>
+						<a href="mare.html" class="l1"><li class="lista">Tidal Force</li></a>
+						<a href="kepler.html" class="l1"><li class="lista">Kepler's Laws</li></a>
+						<a href="eletromagnetismo.html" class="l1"><li class="lista">Electromagnetism</li></a>
+						<a href="bigbang.html" class="l1"><li class="lista">Big Bang</li></a>
+						<a href="classificacao.html" class="l1"><li class="lista">Spectral Classification</li></a>
+						<a href="diagrama.html" class="l1"><li class="lista">HR Diagram</li></a>
+					</ul>
+				</li>
+			</ul>
+			<ul class="tagsa" id="tagsa">
+				<li class="tag1a">
+					<a href="#" class="astronomia" id="aston" onclick="click2();"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21a" id="menu21a">
+						<a href="historia.html" class="l1a"><li class="listaa">Old Astronomy</li></a>
+						<a href="constelacao.html" class="l1a"><li class="listaa">Constellations</li></a>
+						<a href="estacao.html" class="l1a"><li class="listaa">Seasons of the Year</li></a>
+						<a href="antigos.html" class="l1a"><li class="listaa">Old Astronomers</li></a>
+						<a href="telescopio.html" class="l1a"><li class="listaa">Instruments</li></a>
+						<a href="fases.html" class="l1a"><li class="listaa">Moon Phases</li></a>
+						<a href="eclipse.html" class="l1a"><li class="listaa">Eclipses</li></a>
+						<a href="solar.html" class="l1a"><li class="listaa">Solar System</li></a>
+						<a href="escala.html" class="l1a"><li class="listaa">Scale of the Universe</li></a>
+						<a href="tera.html" class="l1a"><li class="listaa">Earth</li></a>
+					</ul>
+				</li>
+				<li class="tag2a">
+					<a href="#" class="astrofísica" id="astof" onclick="click1();"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22a" id="menu22a">
+						<a href="doppler.html" class="l1a"><li class="listaa">Doppler Effect</li></a>
+						<a href="mare.html" class="l1a"><li class="listaa">Tidal Force</li></a>
+						<a href="kepler.html" class="l1a"><li class="listaa">Kepler's Laws</li></a>
+						<a href="eletromagnetismo.html" class="l1a"><li class="listaa">Electromagnetism</li></a>
+						<a href="bigbang.html" class="l1a"><li class="listaa">Big Bang</li></a>
+						<a href="classificacao.html" class="l1a"><li class="listaa">Spectral Classification</li></a>
+						<a href="diagrama.html" class="l1a"><li class="listaa">HR Diagram</li></a>
+					</ul>
+				</li>
+			</ul>
+			<a href="#" class="icon" onclick="verificaClick();">
+				&equiv;
+			</a>
+		</nav>
+		<main>
+			<div class="fundo">
+				<div class="inicio">
+					<div class="scro">
+						<a href="#conteudo"><img src="seta.png" class="scrollseta"></a>
+					</div>
+				</div>
+				<div class="final" id="conteudo">
+					<div class="titu">
+						<span class="tito">Astrology</span>
+					</div>
+					<br><br>
+					<div class="artigo">
+						<div class="texto">
+							<strong>History of the astrology</strong>
+							<div class="image">
+									<img src="chat.png" class="imagem" alt="Birth Chart">
+									<p class="legenda">Birth Chart example.</p>
+							</div>
+							<p class="texto">
+								The astrology is marked by superstition involving the stars. It has existed for thousands of years and it was developed differently by different folks. The oldest involving a horoscope system is the Chinese astrology. There are also records of Vedic astrology and Mayan astrology, and perhaps there was the presence of astrology in the culture of several other folks. Astrology involving the <a href="constelacao.html">constellations</a> of the zodiac is the most known today.
+							</p><br>
+							<strong>The Signs</strong><br>
+							<p class="texto">
+								In astrology, the zodiac is divided into 12 constellations, and the constellation whose Sun is passing on the day of your birth, marks your Sun sign, which defines your main personality traits. In general, these signs are based on the position of the stars at the time of their birth, and the map that records these positions, also showing the constellations of the zodiac involved, is called birth chart. All signs are represented by each constellation of the zodiac, being separated into twelve:<br><br>
+								> Aquarius - January 20 | February 18<br>
+								> Pisces - February 19 | March 20<br>
+								> Aries - March 21 | April 19<br>
+								> Taurus - April 20 | May 20<br>
+								> Gemini - May 21 | June 20<br>
+								> Cancer - June 21 | July 22<br>
+								> Leo - July 23 | August 22<br>
+								> Virgo - August 23 | September 22<br>
+								> Libra - September 23 | October 22<br>
+								> Scorpio - October 23 | November 23<br>
+								> Sagittarius - November 22 | December 21<br>
+								> Capricorn - December 22 | January 19<br>
+							</p><br>
+							<p class="texto">
+								<strong>Bibliography</strong><br><br>
+								<a href="https://www.astrology-zodiac-signs.com/pt/" class="links">https://www.astrology-zodiac-signs.com/pt/</a><br>
+								<a href="https://www.personare.com.br/signos" class="links">https://www.personare.com.br/signos</a><br>
+								<a href="https://claudialisboa.com.br/astrologia/" class="links">https://claudialisboa.com.br/</a><br>
+								<br><br><br><br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="futa">
+				<div class="cope">
+					<img src="logotipo.png" class="copylogo">
+					<span class="copy">&copy; SpacePortal 2020<br><br>
+						<a href="recom.html">Recommendations</a><br></span>
+				</div>
+				<div class="coluns">
+					<div class="colun1">
+						<span class="tit1">Astronomy</span><br>
+						<span class="col1"><a href="historia.html">Old Astronomy</a><br><a href="fases.html">Moon Phases</a><br><a href="constelacao.html">Constellations</a><br><a href="eclipse.html">Eclipses</a><br><a href="estacao.html">Seasons of the Year</a><br><a href="solar.html">Solar System</a><br><a href="antigos.html">Old Astronomers</a><br><a href="escala.html">Scale of the Universe</a><br><a href="telescopio.html">Instruments</a><br><a href="tera.html">Earth</a></span>
+					</div>
+					<div class="colun2">
+						<span class="tit2">Astrophysics</span><br>
+						<span class="col2"><a href="doppler.html">Doppler Effect</a><br><a href="mare.html">Tidal Force</a><br><a href="kepler.html">Kepler's Laws</a><br><a href="eletromagnetismo.html">Electromagnetism</a><br><a href="bigbang.html">Big Bang</a><br><a href="classificacao.html">Spectral Classification</a><br><a href="diagrama.html">HR Diagram</a></span>
+					</div>
+					<div class="colun3">
+						<span class="tit3">Contacts</span><br>
+						<span class="col3"><a href="https://twitter.com/mousedesvio">Twitter</a><br><a href="https://www.instagram.com/pedroand6/">Instagram</a><br><a href="mailto:redbrickcar2@gmail.com">redbrickcar2@gmail.com</a><br></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Bibliotecas Javascript aqui -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script type="text/javascript" src="https://getbootstrap.com.br/docs/4.1/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

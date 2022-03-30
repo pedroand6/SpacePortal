@@ -1,0 +1,204 @@
+main{
+  min-height: 190vh;
+  background-size: cover;
+  background-position: 0% 70%;
+  background-repeat: no-repeat;
+  background-image: url(telescopio.jpg);
+  background-attachment: fixed;
+  position: relative;
+}
+#tags{
+  display: none;
+}
+#tagsa{
+  height: auto;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 12vh;
+  padding-left: 0;
+  z-index: 1;
+  background-color: rgb(0,0,0);
+  width: 100%;
+}
+.tag1a,.tag2a{
+  height: auto;
+  display: block;
+  min-height: 12vh;
+  position: static;
+  text-align: center;
+  padding-left: 0;
+  width: 100%;
+}
+#astron, #astrof{
+  line-height: 12vh;
+}
+.listaa{
+  display: block;
+  font-family: bahnschrift;
+  font-size: 2.5vh;
+  color: white;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  padding-left: 0;
+  min-height: 12vh;
+  line-height: 12vh;
+}
+#menu21a{
+  display: none;
+  width: 100%;
+  max-height: none;
+  overflow-y: auto;
+  height: 36vh;
+  left: 0;
+  text-align: center;
+  overflow-x: hidden;
+  background-color: rgb(0,0,0);
+  padding-left: 0;
+  position: relative;
+  margin-left: 0;
+}
+#menu22a{
+  display: none;
+  width: 100%;
+  max-height: none;
+  overflow-y: auto;
+  height: 36vh;
+  left: 0;
+  text-align: center;
+  padding-left: 0;
+  overflow-x: hidden;
+  background-color: rgb(0,0,0);
+  position: relative;
+  margin-left: 0;
+}
+.listaa:hover{
+  background-color: #828282;
+}
+.aa{
+  margin-left: 0;
+}
+.logogo{
+  flex: 1;
+  height: 12vh;
+}
+.icon{
+  display: block;
+}
+.final{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  background-size: all;
+}
+.carosoetext{
+  width: 80%;
+  height: all;
+  padding-top: 10vw;
+  display: flex;
+  flex-direction: column;
+}
+.carousel{
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 1vw;
+}
+.carousel-item{
+  height: 60vw;
+  width: 100%;
+  background-color: rgb(0,0,0);
+  padding-left: 10vw;
+}
+h1{
+  width: 100%;
+  height: 8vw;
+  padding: 2vw;
+  font-size: 4vw;
+  text-align: left;
+  font-family: bahnschrift;
+  background-color: rgba(117, 117, 117, 0.7);
+}
+.descrição{
+  font-size: 2.25vw;
+  line-height: 5vw;
+}
+.redessco{
+  display: none;
+  font-family: bahnschrift;
+  font-size: 1.5vw;
+  color: white;
+  z-index: 1;
+  margin-left: 10%;
+}
+.sobr1, .sobr2{
+  font-size: 4vw;
+  color: white;
+  font-family: bahnschrift;
+  text-align: left;
+  z-index: 1;
+  line-height: 5vw;
+  padding-top: 2vw;
+}
+.sobreeu{
+  margin-top: 10vw;
+  flex: 0.4;
+  display: flex;
+  width: 110%;
+  margin-left: -9vw;
+  flex-direction: column;
+}
+.titu1, .titu2{
+  font-size: 5vw;
+  color: white;
+  font-family: bahnschrift;
+  text-align: left;
+  z-index: 1;
+}
+.sob1{
+  margin-bottom: 3vw;
+}
+.sob2{
+  margin-top: 3vw;
+}
+footer{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  position: relative;
+  bottom: 0;
+}
+.futa{
+  display: flex;
+  flex-direction: column;
+  padding: 2.5vw;
+}
+.coluns{
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+}
+.cope{
+  margin-left: 8vw;
+  padding-bottom: 5vw;
+}
+.copylogo{
+  width: 25vh;
+}
+.copy{
+  font-size: 2.5vh;
+}
+.colun1, .colun2,.colun3{
+  margin-left: 10vw;
+  padding-bottom: 3vw;
+}
+.tit1,.tit2,.tit3{
+  font-size: 4vh;
+  line-height: 8vh;
+}
+.col1,.col2,.col3{
+  font-size: 3vh;
+  line-height: 7vh;
+}

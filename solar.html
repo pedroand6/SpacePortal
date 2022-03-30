@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SpacePortal | Sistema Solar</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="logo.png">
+		<link rel="stylesheet" type="text/css" href="solarpc.css">
+		<link rel="stylesheet" type="text/css" media="screen and (max-device-width:800px)" href="solarcel.css">
+		<script type="text/javascript" src="homejs.js"></script>
+	</head>
+	<body onload="load()" id="body">
+		<div id="loading">
+			<div>
+				<img src="loading.gif" style="width: 200px;">
+			</div>
+		</div>
+		<nav>
+			<a href="index.html" class="aa">
+				<div class="logotipo">
+					<img src="logotipo.png" class="logogo">
+				</div>
+			</a>			
+			<ul class="tags" id="tags">
+				<li class="tag1">
+					<a href="#" class="astronomia"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21">
+						<a href="historia.html" class="l1"><li class="lista">Astronomia Antiga</li></a>
+						<a href="constelacao.html" class="l1"><li class="lista">Constelações</li></a>
+						<a href="estacao.html" class="l1"><li class="lista">Estações do Ano</li></a>
+						<a href="antigos.html" class="l1"><li class="lista">Antigos astrônomos</li></a>
+						<a href="telescopio.html" class="l1"><li class="lista">Instrumentos</li></a>
+						<a href="fases.html" class="l1"><li class="lista">Fases da Lua</li></a>
+						<a href="eclipse.html" class="l1"><li class="lista">Eclipses</li></a>
+						<a href="solar.html" class="l1"><li class="lista">Sistema Solar</li></a>
+						<a href="escala.html" class="l1"><li class="lista">Escala do Universo</li></a>
+						<a href="tera.html" class="l1"><li class="lista">Terra</li></a>
+					</ul>
+				</li>
+				<li class="tag2">
+					<a href="#" class="astrofísica"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22">
+						<a href="doppler.html" class="l1"><li class="lista">Efeito Doppler</li></a>
+						<a href="mare.html" class="l1"><li class="lista">Efeito de Maré</li></a>
+						<a href="kepler.html" class="l1"><li class="lista">Leis de Kepler</li></a>
+						<a href="eletromagnetismo.html" class="l1"><li class="lista">Eletromagnetismo</li></a>
+						<a href="bigbang.html" class="l1"><li class="lista">Big Bang</li></a>
+						<a href="classificacao.html" class="l1"><li class="lista">Classificação Espectral</li></a>
+						<a href="diagrama.html" class="l1"><li class="lista">Diagrama HR</li></a>
+					</ul>
+				</li>
+			</ul>
+			<ul class="tagsa" id="tagsa">
+				<li class="tag1a">
+					<a href="#" class="astronomia" id="aston" onclick="click2();"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21a" id="menu21a">
+						<a href="historia.html" class="l1a"><li class="listaa">Astronomia Antiga</li></a>
+						<a href="constelacao.html" class="l1a"><li class="listaa">Constelações</li></a>
+						<a href="estacao.html" class="l1a"><li class="listaa">Estações do Ano</li></a>
+						<a href="antigos.html" class="l1a"><li class="listaa">Antigos astrônomos</li></a>
+						<a href="telescopio.html" class="l1a"><li class="listaa">Instrumentos</li></a>
+						<a href="fases.html" class="l1a"><li class="listaa">Fases da Lua</li></a>
+						<a href="eclipse.html" class="l1a"><li class="listaa">Eclipses</li></a>
+						<a href="solar.html" class="l1a"><li class="listaa">Sistema Solar</li></a>
+						<a href="escala.html" class="l1a"><li class="listaa">Escala do Universo</li></a>
+						<a href="tera.html" class="l1a"><li class="listaa">Terra</li></a>
+					</ul>
+				</li>
+				<li class="tag2a">
+					<a href="#" class="astrofísica" id="astof" onclick="click1();"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22a" id="menu22a">
+						<a href="doppler.html" class="l1a"><li class="listaa">Efeito Doppler</li></a>
+						<a href="mare.html" class="l1a"><li class="listaa">Efeito de Maré</li></a>
+						<a href="kepler.html" class="l1a"><li class="listaa">Leis de Kepler</li></a>
+						<a href="eletromagnetismo.html" class="l1a"><li class="listaa">Eletromagnetismo</li></a>
+						<a href="bigbang.html" class="l1a"><li class="listaa">Big Bang</li></a>
+						<a href="classificacao.html" class="l1a"><li class="listaa">Classificação Espectral</li></a>
+						<a href="diagrama.html" class="l1a"><li class="listaa">Diagrama HR</li></a>
+					</ul>
+				</li>
+			</ul>
+			<a href="#" class="icon" onclick="verificaClick();">
+				&equiv;
+			</a>
+		</nav>
+		<main>
+			<div class="fundo">
+				<div class="inicio">
+					<div class="scro">
+						<a href="#conteudo"><img src="seta.png" class="scrollseta"></a>
+					</div>
+				</div>
+				<div class="final" id="conteudo">
+					<div class="titu">
+						<span class="tito">Sistema Solar</span>
+					</div>
+					<div class="artigo">
+						<div class="text">
+							<strong>Sistema Solar </strong><br>
+							<div class="image">
+								<img src="sistema.png" class="imagem" alt="Sistema Solar">
+								<p class="legenda">Ilustração do Sistema Solar.</p>
+							</div>
+							<p class="texto">O Sistema Solar se localiza no braço de Órion, da galáxia da Via Láctea, dentro da Nuvem de Oort. É nele, que a Terra, nosso planeta, todos os outros planetas, planetas-anões e meteoros, estão. O nosso entendimento sobre o Sistema Solar evoluiu e regrediu muito durante a <a href="historia.html">história da astronomia</a>. Já se acreditou durante muito tempo, que a <a href="tera.html">Terra</a> era o centro do Universo, e só depois que a proposta de que o Sol era quem estava no centro, foi levada em consideração, mesmo que o Sol não estivesse no centro do Universo, esse já era um grande avanço. Atualmente, possuímos um conhecimento mais avançado sobre o sistema em que estamos, mas ainda há muita coisa para se descobrir.</p><br>
+							<strong>Sol </strong><br>
+							<p class="texto">O Sol é o centro do Sistema Solar, constituindo 99,8% de sua massa. Ele é uma estrela anã amarela que orbita a Via Láctea, e que foi formada a aproximadamente 4,5 bilhões de anos, dentro da Nuvem de Oort. O Sol é composto de 92% de hidrogênio, 7,9% de hélio e 0,1% de outros elementos. Sua temperatura no núcleo pode chegar a 15 milhões de graus Célcius. E ele possui uma rotação, assim como a Terra, porém sua rotação é diferencial, tendo um tempo de aproximadamente 25 dias no equador, e aproximadamente 35 dias perto dos polos.</p><br>
+							<strong>Mercúrio </strong><br>
+							<p class="texto">Mercúrio é o primeiro planeta do Sistema Solar, e o menor deles. Seus dias duram mais do que seus anos, e a sua órbita é a mais excêntrica de todos os planetas. Ele é um planeta rochoso, e sua atmosfera, mesmo que exista, é quase nula. Ele não possui satélites naturais, e a inclinação de sua rotação é de aproximadamente 0°, tendo sempre, o dia e a noite com quase a mesma duração.
+							</p><br>
+							<strong>Vênus </strong><br>
+							<p class="texto">Vênus é o segundo planeta do Sistema Solar, e é também um planeta rochoso. Seus dias também duram mais que seus anos, porém, isso de deve ao fato de que a inclinação do seu eixo é praticamente invertida, com 177° de inclinação. A sua atmosfera é composta em maioria, por dióxido de carbono, e ela é muito densa, criando um efeito estufa enorme no planeta, o que faz com que a temperatura na sua superfície chegue a supreendentes 465°C. Vênus também não possui satélites naturais.</p><br>
+							<strong>Terra </strong><br>
+							<p class="texto">A Terra é o planeta em que vivemos, sendo o terceiro planeta do Sistema Solar. Ela é um planeta rochoso, com um satélite natural muito conhecido, chamado Lua. Sua atmosfera é composta de 21% de oxigênio, 78% de nitrogênio e 1% de vários outros gases conhecidos. A duração do seu dia é de 24 horas, e o seu ano dura aproximadamente 365 dias. A Terra é o único planeta conhecido, até o momento, em todo o Universo, que pode suportar vida, e o principal fator que leva a isso, é que ela está em uma posição favorável na órbita, ao sustento de água líquida na sua superfície. O seu eixo de rotação é inclinado em aproximadamente 23°, o que faz com que existam estações, e os dias e as noites tenham diferentes durações durante o ano.</p><br>
+							<strong>Marte </strong>
+							<p class="texto">Marte é o quarto planeta do Sistema Solar, e o último dos planetas rochosos. Possui dois satélites naturais, chamados de Deimos e Fobos. Tem uma atmosfera composta principalmente de dióxido de carbono, embora seja mais rarefeita do que a atmosfera da Terra. Seus dias e a inclinação do seu eixo são bem parecidos com os da Terra, a única diferença, é a duração do seu ano, que é de aproximadamente 687 dias, porque está a uma distância maior do Sol do que a Terra. A temperatura na sua superfície pode variar de 20°C a -140°C. Por ter muitas semelhanças, e uma grande proximidade com a Terra, Marte é o planeta que mais chama atenção para pesquisas, e até, para uma possível colonização.</p><br>
+							<strong>Júpiter </strong>
+							<p class="texto">Júpiter é o quinto planeta do Sistema Solar, e o maior de todos os planetas. É um planeta gigante gasoso, e possui 79 satélites naturais. Sua atmosfera é composta basicamente por hidrogênio e hélio, e seus dias duram aproximadamente 10 horas, com um ano durando 12 anos terrestres. Júpiter possui uma gravidade imensa, com uma aceleração gravitacional de 24,8 m/s², por conta da sua massa gigantesca. Assim como Mercúrio, Júpiter também possui uma inclinação em seu eixo de rotação, muito baixa.</p><br>
+							<strong>Saturno </strong><br>
+							<p class="texto">Saturno é um dos planetas que mais chamam atenção no Sistema Solar. Ele é o sexto planeta, na ordem, e o segundo dos gigantes gasosos. Saturno, por ser um gigante gasoso, possui características muito semelhantes as de Júpiter, como a atmosfera, a temperatura média e a duração dos dias. O que faz de Saturno especial, são os seus satélites naturais, e principalmente, o seus grandes anéis que estão ao seu redor. Saturno possui anéis maiores do que os anéis dos outros planetas do Sistema, e que são lindos e chamativos, quando observados por um telescópio. Além disso, como citado, Saturno possui 62 satélites naturais, e um deles, Titã, é considerado o segundo maior satélite natural do Sistema Solar. Entre os outros satélites naturais de Saturno, há vários com muitas peculiaridades, que são muito comentados e causam muitas discussões dentro do meio científico.</p><br>
+							<strong>Urano </strong><br>
+							<p class="texto">Urano é o sétimo planeta do Sistema Solar. Ele é também, um dos planetas mais estranhos. Ele possui 27 satélites naturais, e 13 anéis. Porém, uma das coisas mais diferentes sobre ele, é que estes anéis, assim como o seu eixo de rotação, estão posicionados na vertical, com uma inclinação de aproximadamente 98°. Urano é um gigante de gelo, e tem dias com uma duração de aproximadamente 17 horas, e anos com duração de aproximadamente 84 anos terrestres. Sua temperatura mínima é de -224°C, o que o torna muito frio, principalmente por ser um dos planetas mais distantes do Sol.</p><br>
+							<strong>Netuno </strong><br>
+							<p class="texto">Netuno é o oitavo planeta do Sistema solar, e o último mais distante do Sol. Ele é um gigante de gelo, com propriedades parecidas com as de Urano. Possui 13 satélites naturais, e uma inclinação de 28° no seu eixo de rotação. Sua temperatura média é de -210°C, seus dias duram aproximadamente 16 horas, e seus anos duram aproximadamente 165 anos terrestres.</p><br>
+							<strong>Planetas anões </strong>
+							<p class="texto">Há 5 planetas anões no Sistema Solar, eles são Plutão, Ceres, Haumea, Makemake e Éris. Todos eles possuem algumas propriedades consideráveis para serem considerados planetas, porém não seguem todas as carácteristicas de um planeta, principalmente em relação ao seu tamanho. Ceres, é o único dentro de todos os outros, que se encontra no Sistema Solar interior, pois se localiza no Cinturão de Asteróides, entre as órbitas de Marte e de Júpiter. Todos os outros estão dentro do Cinturão de Kuiper. O planeta anão que mais de destaca dos outros, certamente é Plutão, que já foi considerado um planeta, porém atualmente não é mais, devido ao seu tamanho pequeno, sendo menor que a nossa Lua. Plutão possui 5 satélites naturais, sendo o mais conhecido deles, Caronte que tem a metade do tamanho de Plutão.</p><br>
+							<strong>Bibliografia </strong><br>
+							<p class="texto">
+								<a href="http://astro.if.ufrgs.br/ssolar.htm" class="links">http://astro.if.ufrgs.br/</a><br>
+								<a href="https://planetario.ufsc.br/o-sistema-solar/" class="links">https://planetario.ufsc.br/</a><br>
+								<a href="https://www.if.ufrgs.br/ast/solar/portug/solarsys.htm" class="links">https://www.if.ufrgs.br/</a><br>
+								<a href="https://www.unifal-mg.edu.br/observatorio/sistema-solar/" class="links">https://www.unifal-mg.edu.br/</a><br>
+							</p>
+							<br><br><br><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="futa">
+				<div class="cope">
+					<img src="logotipo.png" class="copylogo">
+					<span class="copy">&copy; SpacePortal 2020<br><br>
+						<a href="recom.html">Recomendações</a><br></span>
+				</div>
+				<div class="coluns">
+					<div class="colun1">
+						<span class="tit1">Astronomia</span><br>
+						<span class="col1"><a href="historia.html">Astronomia da Antiguidade</a><br><a href="fases.html">Fases da Lua</a><br><a href="constelacao.html">Constelações</a><br><a href="eclipse.html">Eclipses</a><br><a href="estacao.html">Estações do ano</a><br><a href="solar.html">Sistema Solar</a><br><a href="antigos.html">Astrônomos da antiguidade</a><br><a href="escala.html">Escala do Universo</a><br><a href="telescopio.html">Instrumentos de observação</a><br><a href="tera.html">Terra</a></span>
+					</div>
+					<div class="colun2">
+						<span class="tit2">Astrofísica</span><br>
+						<span class="col2"><a href="doppler.html">Efeito Doppler</a><br><a href="mare.html">Efeito de Maré</a><br><a href="kepler.html">Leis de Kepler</a><br><a href="eletromagnetismo.html">Espectro eletromagnético</a><br><a href="bigbang.html">Big Bang</a><br><a href="classificacao.html">Classificação Espectral</a><br><a href="diagrama.html">Diagrama HR</a></span>
+					</div>
+					<div class="colun3">
+						<span class="tit3">Contato</span><br>
+						<span class="col3"><a href="https://twitter.com/mousedesvio">Twitter</a><br><a href="https://www.instagram.com/pedroand6/">Instagram</a><br><a href="mailto:redbrickcar2@gmail.com">redbrickcar2@gmail.com</a><br></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Bibliotecas Javascript aqui -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script type="text/javascript" src="https://getbootstrap.com.br/docs/4.1/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

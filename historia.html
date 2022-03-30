@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SpacePortal | História da Astronomia</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="logo.png">
+		<link rel="stylesheet" type="text/css" href="historiapc.css">
+		<link rel="stylesheet" type="text/css" media="screen and (max-device-width:800px)" href="historiacel.css">
+		<script type="text/javascript" src="homejs.js"></script>
+	</head>
+	<body onload="load()" id="body">
+		<div id="loading">
+			<div>
+				<img src="loading.gif" style="width: 200px;">
+			</div>
+		</div>
+		<nav>
+			<a href="index.html" class="aa">
+				<div class="logotipo">
+					<img src="logotipo.png" class="logogo">
+				</div>
+			</a>			
+			<ul class="tags" id="tags">
+				<li class="tag1">
+					<a href="#" class="astronomia"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21">
+						<a href="historia.html" class="l1"><li class="lista">Astronomia Antiga</li></a>
+						<a href="constelacao.html" class="l1"><li class="lista">Constelações</li></a>
+						<a href="estacao.html" class="l1"><li class="lista">Estações do Ano</li></a>
+						<a href="antigos.html" class="l1"><li class="lista">Antigos astrônomos</li></a>
+						<a href="telescopio.html" class="l1"><li class="lista">Instrumentos</li></a>
+						<a href="fases.html" class="l1"><li class="lista">Fases da Lua</li></a>
+						<a href="eclipse.html" class="l1"><li class="lista">Eclipses</li></a>
+						<a href="solar.html" class="l1"><li class="lista">Sistema Solar</li></a>
+						<a href="escala.html" class="l1"><li class="lista">Escala do Universo</li></a>
+						<a href="tera.html" class="l1"><li class="lista">Terra</li></a>
+					</ul>
+				</li>
+				<li class="tag2">
+					<a href="#" class="astrofísica"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22">
+						<a href="doppler.html" class="l1"><li class="lista">Efeito Doppler</li></a>
+						<a href="mare.html" class="l1"><li class="lista">Efeito de Maré</li></a>
+						<a href="kepler.html" class="l1"><li class="lista">Leis de Kepler</li></a>
+						<a href="eletromagnetismo.html" class="l1"><li class="lista">Eletromagnetismo</li></a>
+						<a href="bigbang.html" class="l1"><li class="lista">Big Bang</li></a>
+						<a href="classificacao.html" class="l1"><li class="lista">Classificação Espectral</li></a>
+						<a href="diagrama.html" class="l1"><li class="lista">Diagrama HR</li></a>
+					</ul>
+				</li>
+			</ul>
+			<ul class="tagsa" id="tagsa">
+				<li class="tag1a">
+					<a href="#" class="astronomia" id="aston" onclick="click2();"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21a" id="menu21a">
+						<a href="historia.html" class="l1a"><li class="listaa">Astronomia Antiga</li></a>
+						<a href="constelacao.html" class="l1a"><li class="listaa">Constelações</li></a>
+						<a href="estacao.html" class="l1a"><li class="listaa">Estações do Ano</li></a>
+						<a href="antigos.html" class="l1a"><li class="listaa">Antigos astrônomos</li></a>
+						<a href="telescopio.html" class="l1a"><li class="listaa">Instrumentos</li></a>
+						<a href="fases.html" class="l1a"><li class="listaa">Fases da Lua</li></a>
+						<a href="eclipse.html" class="l1a"><li class="listaa">Eclipses</li></a>
+						<a href="solar.html" class="l1a"><li class="listaa">Sistema Solar</li></a>
+						<a href="escala.html" class="l1a"><li class="listaa">Escala do Universo</li></a>
+						<a href="tera.html" class="l1a"><li class="listaa">Terra</li></a>
+					</ul>
+				</li>
+				<li class="tag2a">
+					<a href="#" class="astrofísica" id="astof" onclick="click1();"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22a" id="menu22a">
+						<a href="doppler.html" class="l1a"><li class="listaa">Efeito Doppler</li></a>
+						<a href="mare.html" class="l1a"><li class="listaa">Efeito de Maré</li></a>
+						<a href="kepler.html" class="l1a"><li class="listaa">Leis de Kepler</li></a>
+						<a href="eletromagnetismo.html" class="l1a"><li class="listaa">Eletromagnetismo</li></a>
+						<a href="bigbang.html" class="l1a"><li class="listaa">Big Bang</li></a>
+						<a href="classificacao.html" class="l1a"><li class="listaa">Classificação Espectral</li></a>
+						<a href="diagrama.html" class="l1a"><li class="listaa">Diagrama HR</li></a>
+					</ul>
+				</li>
+			</ul>
+			<a href="#" class="icon" onclick="verificaClick();">
+				&equiv;
+			</a>
+		</nav>
+		<main>
+			<div class="fundo">
+				<div class="inicio">
+					<div class="scro">
+						<a href="#conteudo"><img src="seta.png" class="scrollseta"></a>
+					</div>
+				</div>
+				<div class="final" id="conteudo">
+					<div class="titu">
+						<span class="tito">Astronomia da antiguidade</span>
+					</div>
+					<div class="artigo">
+						<div class="text">
+							<strong>Astronomia na pré-história </strong><br>
+							<div class="image">
+								<img src="historia.jpg" class="imagem" alt="Stonehenge">
+								<p class="legenda">Foto de solstício em Stonehenge/ 2020</p>
+							</div>
+							<p class="texto">A astronomia é uma ciência muito antiga, e mesmo há muito tempo atrás, na pré-história, os homens já faziam uso dela. As pessoas observavam o Sol, as estrelas e a Lua, e assim, tinham uma noção de tempo, podiam prever os momentos para se fazer a colheita, se guiavam e navegavam a partir da posição das estrelas, e também, criavam superstições com deuses e figuras mitológicas a partir dos astros. Ou seja, a astronomia, mesmo que não fosse da mesma forma que hoje, participava ativamente da vida dos humanos pré-históricos, seja como calendário, relógio, mapa ou como base pras suas crenças. Existem várias evidências de que as pessoas desta época tinham conhecimento sobre o céu, como por exemplo, as pinturas rupestres de <a href="constelacao.html">constelações</a>, ou os mégalitos e as pedras que eram ajustadas de acordo com as posições do Sol e da Lua durante o ano. O exemplo mais conhecido atualmente é o da Stonehenge, que está na imagem ao lado, localizado na Inglaterra, e se trata de pedras arranjadas de forma circular, cada uma com aproximadamente 26 toneladas.</p><br>
+							<strong>Fundamentos da astronomia antiga </strong><br>
+							<p class="texto">Como a astronomia na antiguidade era baseada em objetivos práticos, para garantir, basicamente, a sobrevivência das pessoas, não haviam muitas teorias sobre o Universo ou explicações sobre os fenômenos do céu que se abstivessem de crenças místicas. Nessa época, os povos que se destacavam na astronomia eram os chineses, os gregos, os mesopotâmios, os egípcios e os povos da América, que possuiam vários registros de antigos calendários e também, observatórios astronômicos, como o Chankillo, no Peru, construído entre 300 e 200 a.C.</p><br>
+							<strong>Astronomia na Mesopotâmia </strong><br>
+							<p class="texto">A astronomia na Mesopotâmia foi muito importante para o avanço da astronomia no mundo todo. Os sumérios, um dos povos mais antigos da região, desenvolveram a astronomia utilizando principalmente através do misticismo, criando até mesmo, conceitos fundamentais para a <a href="zodiaco.html">astrologia</a> como conhecemos atualmente. Algo extremamente importante, que foi desenvolvido pelos sumérios, foi a introdução da matemática na astronomia, e assim, eles puderam realizar muitos cálculos envolvendo suas observações da Lua, das estrelas e do Sol, como por exemplo, calcular a duração do <a href="fases.html">período sinódico</a> (o tempo entre duas fases da Lua iguais).
+							</p><br>
+							<strong>Astronomia na Grécia Antiga </strong><br>
+							<p class="texto">Os gregos foram o povo mais influente, na antiguidade, com relação à astronomia. Vários gregos foram muito importantes para o desenvolvimento da astronomia como a conhecemos. A Grécia Antiga é popularmente conhecida como um local em que ter conhecimento e curiosidade era algo a ser incentivado, e por conta dessa curiosidade, eles foram capazes de inúmeras descobertas importantes na área da ciência.
+							</p><br>
+							<strong>Principais astrônomos da Grécia Antiga: </strong><br>
+							<p class="texto">
+								> Tales de Mileto (624 - 546 a.C.), foi quem introduziu os conceitos da astronomia e da geometria na Grécia, que foram trazidos por ele, do Egito. Ele foi um dos primeiros a conseguir explicar os <a href="eclipse.html">eclipses</a>, pois já sabia que a Lua é iluminada pelo Sol.<br>
+								> Pitágoras de Samos (572 - 497 a.C.), foi o primeiro a chamar o céu de cosmos. Pitágoras acreditava na esfericidade da <a href="tera.html">Terra</a> de dos outros corpos celestes, e achava, diferentemente dos outros, que os planetas, o Sol e a Lua eram carregados por uma esfera diferente da esfera das estrelas.<br>
+								> Aristóteles de Estagira (384-322 a.C.), foi quem conseguiu explicar com detalhes as <a href="fases.html">fases da Lua</a> e os <a href="eclipse.html">eclipses</a>, porque assim como Tales de Mileto, ele acreditava que a Lua era um corpo iluminado pelo Sol. Por este motivo, também, ele acreditava na esfericidade da Terra, já que a sombra da Terra na Lua, em um eclipse lunar, é sempre redonda. Aristóteles também acreditava que o Universo é infinito e esférico.<br>
+								> Heráclides de Pontus (388-315 a.C.), foi um dos primeiros a propor que a <a href="tera.html">Terra</a> girava em torno de seu próprio eixo (movimento de rotação), e que epiciclos existiam. Ele também acreditava que Vênus e Mercúrio orbitavam o Sol.<br>
+								> Aristarco de Samos(310-230 a.C.), antecipou Copérnico em quase 2 mil anos, propondo que a Terra orbitava o Sol, e também determinou as distâncias do Sol e da Lua até a Terra, e o tamanho dos três, através de um método desenvolvido por ele.<br>
+								> Erastótenes de Cirênia (276-194 a.C.), foi o diretor da Biblioteca de Alexandria, e é muito conhecido atualmente, principalmente por ter sido o primeiro a calcular o diâmetro da Terra com uma precisão muito alta para a época. Ele utilizou da diferença entre a posição do Sol, e do tamanho das sombras de um objeto, entre duas cidades distantes, para realizar este cálculo. Se quiser saber mais sobre Erastótenes e seu cálculo, <a href="https://www.ifi.unicamp.br/~lunazzi/F530_F590_F690_F809_F895/F809/F809_sem2_2002/940298_AndreVinagre_Eratostenes.pdf">clique aqui</a>.<br>
+								> Hiparco de Nicéia (87-150 d.C.), é considerado um dos maiores astrônomos da sua época, pois fez muitas observações e cálculos muito precisos para o seu tempo. Ele catalogou a posição e magnitude (uma medida do brilho aparente de uma estrela) de 850 estrelas. Dentro dos cálculos de Hiparco, estavam a sua dedução da direção dos polos celestes, a <a href="tera.html">precessão</a> da Terra (o movimento da direção do eixo de rotação da Terra), a razão de 8/3 do tamanho da sombra da Terra para o tamanho da Lua, a distância entre a Terra e a Lua e a duração de um ano.<br>
+								> Ptolomeu (87-150 d.C.), ele foi o último astrônomo de destaque da antiguidade. Ptolomeu é muito conhecido por ser o autor de uma representação geocêntrica do sistema solar, utilizando de círculos nas órbitas, e epiciclos nos planetas (movimento circular que os planetas realizariam em torno de um ponto fixo, enquanto orbitavam a Terra). Esse modelo geocêntrico foi usado até o Renascimento por muitos <a href="antigos.html">astrônomos</a>, desde que foi criado. Ptolomeu foi muito reconhecido na sua época, e é o autor do Almagesto, um livro que foi considerado referência do conhecimento astronômico, na Grécia Antiga, por muito tempo.<br>
+							</p><br>
+							<strong>Bibliografia </strong><br>
+							<p class="texto">
+								<a href="http://astro.if.ufrgs.br/antiga/antiga.htm" class="links">http://astro.if.ufrgs.br/antiga/antiga.htm</a><br>
+								<a href="http://www.if.ufrgs.br/tex/fis01043/20042/felipe/historia.html" class="links">http://www.if.ufrgs.br/</a><br>
+								<a href="http://www.univasf.edu.br/~militao.figueredo/MNPEF/fisicacomtemporanea/Monografias/Historia%20da%20Astronomia%20-%20Deivd%20Porto.pdf" class="links">http://www.univasf.edu.br/</a><br>
+								<a href="http://www.ciencias.seed.pr.gov.br/arquivos/File/Astronomia/Historia_da_Astronomia.pdf" class="links">http://www.ciencias.seed.pr.gov.br/</a>
+							</p>
+							<br><br><br><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="futa">
+				<div class="cope">
+					<img src="logotipo.png" class="copylogo">
+					<span class="copy">&copy; SpacePortal 2020<br><br>
+						<a href="recom.html">Recomendações</a><br></span>
+				</div>
+				<div class="coluns">
+					<div class="colun1">
+						<span class="tit1">Astronomia</span><br>
+						<span class="col1"><a href="historia.html">Astronomia da Antiguidade</a><br><a href="fases.html">Fases da Lua</a><br><a href="constelacao.html">Constelações</a><br><a href="eclipse.html">Eclipses</a><br><a href="estacao.html">Estações do ano</a><br><a href="solar.html">Sistema Solar</a><br><a href="antigos.html">Astrônomos da antiguidade</a><br><a href="escala.html">Escala do Universo</a><br><a href="telescopio.html">Instrumentos de observação</a><br><a href="tera.html">Terra</a></span>
+					</div>
+					<div class="colun2">
+						<span class="tit2">Astrofísica</span><br>
+						<span class="col2"><a href="doppler.html">Efeito Doppler</a><br><a href="mare.html">Efeito de Maré</a><br><a href="kepler.html">Leis de Kepler</a><br><a href="eletromagnetismo.html">Espectro eletromagnético</a><br><a href="bigbang.html">Big Bang</a><br><a href="classificacao.html">Classificação Espectral</a><br><a href="diagrama.html">Diagrama HR</a></span>
+					</div>
+					<div class="colun3">
+						<span class="tit3">Contato</span><br>
+						<span class="col3"><a href="https://twitter.com/mousedesvio">Twitter</a><br><a href="https://www.instagram.com/pedroand6/">Instagram</a><br><a href="mailto:redbrickcar2@gmail.com">redbrickcar2@gmail.com</a><br></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Bibliotecas Javascript aqui -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script type="text/javascript" src="https://getbootstrap.com.br/docs/4.1/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

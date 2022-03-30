@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SpacePortal | Stellar Classification</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="logo.png">
+		<link rel="stylesheet" type="text/css" href="classificacaopc.css">
+		<link rel="stylesheet" type="text/css" media="screen and (max-device-width:800px)" href="classificacaocel.css">
+		<script type="text/javascript" src="homejs.js"></script>
+	</head>
+	<body onload="load()" id="body">
+		<div id="loading">
+			<div>
+				<img src="loading.gif" style="width: 200px;">
+			</div>
+		</div>
+		<nav>
+			<a href="index.html" class="aa">
+				<div class="logotipo">
+					<img src="logotipo.png" class="logogo">
+				</div>
+			</a>			
+			<ul class="tags" id="tags">
+				<li class="tag1">
+					<a href="#" class="astronomia"><p class="astron">Astronomy <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21">
+						<a href="historia.html" class="l1"><li class="lista">Old Astronomy</li></a>
+						<a href="constelacao.html" class="l1"><li class="lista">Constellations</li></a>
+						<a href="estacao.html" class="l1"><li class="lista">Seasons of the Year</li></a>
+						<a href="antigos.html" class="l1"><li class="lista">Old Astronomers</li></a>
+						<a href="telescopio.html" class="l1"><li class="lista">Instruments</li></a>
+						<a href="fases.html" class="l1"><li class="lista">Moon Phases</li></a>
+						<a href="eclipse.html" class="l1"><li class="lista">Eclipses</li></a>
+						<a href="solar.html" class="l1"><li class="lista">Solar System</li></a>
+						<a href="escala.html" class="l1"><li class="lista">Scale of the Universe</li></a>
+						<a href="tera.html" class="l1"><li class="lista">Earth</li></a>
+					</ul>
+				</li>
+				<li class="tag2">
+					<a href="#" class="astrofísica"><p class="astrof">Astrophysics <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22">
+						<a href="doppler.html" class="l1"><li class="lista">Doppler Effect</li></a>
+						<a href="mare.html" class="l1"><li class="lista">Tidal Force</li></a>
+						<a href="kepler.html" class="l1"><li class="lista">Kepler's Laws</li></a>
+						<a href="eletromagnetismo.html" class="l1"><li class="lista">Electromagnetism</li></a>
+						<a href="bigbang.html" class="l1"><li class="lista">Big Bang</li></a>
+						<a href="classificacao.html" class="l1"><li class="lista">Spectral Classification</li></a>
+						<a href="diagrama.html" class="l1"><li class="lista">HR Diagram</li></a>
+					</ul>
+				</li>
+			</ul>
+			<ul class="tagsa" id="tagsa">
+				<li class="tag1a">
+					<a href="#" class="astronomia" id="aston" onclick="click2();"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21a" id="menu21a">
+						<a href="historia.html" class="l1a"><li class="listaa">Old Astronomy</li></a>
+						<a href="constelacao.html" class="l1a"><li class="listaa">Constellations</li></a>
+						<a href="estacao.html" class="l1a"><li class="listaa">Seasons of the Year</li></a>
+						<a href="antigos.html" class="l1a"><li class="listaa">Old Astronomers</li></a>
+						<a href="telescopio.html" class="l1a"><li class="listaa">Instruments</li></a>
+						<a href="fases.html" class="l1a"><li class="listaa">Moon Phases</li></a>
+						<a href="eclipse.html" class="l1a"><li class="listaa">Eclipses</li></a>
+						<a href="solar.html" class="l1a"><li class="listaa">Solar System</li></a>
+						<a href="escala.html" class="l1a"><li class="listaa">Scale of the Universe</li></a>
+						<a href="tera.html" class="l1a"><li class="listaa">Earth</li></a>
+					</ul>
+				</li>
+				<li class="tag2a">
+					<a href="#" class="astrofísica" id="astof" onclick="click1();"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22a" id="menu22a">
+						<a href="doppler.html" class="l1a"><li class="listaa">Doppler Effect</li></a>
+						<a href="mare.html" class="l1a"><li class="listaa">Tidal Force</li></a>
+						<a href="kepler.html" class="l1a"><li class="listaa">Kepler's Laws</li></a>
+						<a href="eletromagnetismo.html" class="l1a"><li class="listaa">Electromagnetism</li></a>
+						<a href="bigbang.html" class="l1a"><li class="listaa">Big Bang</li></a>
+						<a href="classificacao.html" class="l1a"><li class="listaa">Spectral Classification</li></a>
+						<a href="diagrama.html" class="l1a"><li class="listaa">HR Diagram</li></a>
+					</ul>
+				</li>
+			</ul>
+			<a href="#" class="icon" onclick="verificaClick();">
+				&equiv;
+			</a>
+		</nav>
+		<main>
+			<div class="fundo">
+				<div class="inicio">
+					<div class="scro">
+						<a href="#conteudo"><img src="seta.png" class="scrollseta"></a>
+					</div>
+				</div>
+				<div class="final" id="conteudo">
+					<div class="titu">
+						<span class="tito">Stellar Classification</span>
+					</div>
+					<div class="artigo">
+						<div class="text">
+							<strong>What's it based on </strong><br>
+							<p class="texto">This classification is based on the cataloging of the <a href="eletromagnetismo.html">absorption spectra</a> of 225000 stars, in contrast to the intensity of the absorption lines, relative to the temperature of the star, being a temperature classification.</p><br>
+						</div>
+						<div class="image">
+							<img src="espectros.png" class="imagem" alt="Espectro de absorção de cada elemento">
+							<p class="legenda">Absorption spectrum of each element.</p>
+						</div>
+						<div class="text">
+							<strong>How are stellar spectra generated </strong><br>
+							<p class="texto">
+								> The stellar spectra are continuous with absorption lines.<br>
+								> The continuous spectrum is generated in the photosphere (visible star surface) and the absorption lines are generated in the thin atmosphere, which depend on the elements of the atmosphere and the temperature of the star.<br>
+								> The color of a star depends on its temperature, as described in Wien's Law.</p><br>
+							<strong>What are the classes </strong><br>
+							<p class="texto">
+								From the highest to the lowest temperature, the spectral classes are divided into: O, B, A, F, G, K, M. Each one has 10 subdivisions from 0 to 9, such as: A0, A1, A2 ...<br>
+								<br>
+								> O - Blue stars, Effective temperatures = 20000 to 35000K. Examples: 10 Lac and Mintaka.<br><br>
+								> B - Bluish-white stars, Effective temperatures = 15000K. Examples: Rigel and Spica.<br><br>
+								> A - White stars, Effective temperatures = 9000K. Examples: Sirius and Vega.<br><br>
+								> F - Yellowish-white stars, Effective temperatures = 7000K. Examples: Canopus and Procyon.<br><br>
+								> G - Yellow stars, Effective temperatures = 5500K. Examples: The Sun and Capela. <br><br>
+								> K - Orangish stars, Effective temperatures = 4000K. Examples: Aldebaran and Arcturus.<br><br>
+								> M - Red stars, Effective temperatures = 3000K. Examples: Betelgeuse and Antares.<br>
+							</p><br>
+						</div>
+						<div class="image">
+							<img src="espectros2.png" class="imagem" alt="Classificação pelo espectro de absorção">
+							<p class="legenda">Classification by the absorption spectrum.</p>
+						</div>
+						<div class="text">
+							<p class="texto">
+								<strong>Bibliography</strong><br><br>
+								<a href="http://astro.if.ufrgs.br/rad/espec/espec.htm" class="links">http://astro.if.ufrgs.br/</a><br>
+								<a href="https://www.youtube.com/watch?v=9BfTB1DxaJc&list=PLxI8Can9yAHd7kUPviBHxr-49QEl7PRXR&index=8&ab_channel=UNIVESP" class="links">Video of the Astronomy course at Univesp</a><br>
+								<br><br><br><br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="futa">
+				<div class="cope">
+					<img src="logotipo.png" class="copylogo">
+					<span class="copy">&copy; SpacePortal 2020<br><br>
+						<a href="recom.html">Recommendations</a><br></span>
+				</div>
+				<div class="coluns">
+					<div class="colun1">
+						<span class="tit1">Astronomy</span><br>
+						<span class="col1"><a href="historia.html">Old Astronomy</a><br><a href="fases.html">Moon Phases</a><br><a href="constelacao.html">Constellations</a><br><a href="eclipse.html">Eclipses</a><br><a href="estacao.html">Seasons of the Year</a><br><a href="solar.html">Solar System</a><br><a href="antigos.html">Old Astronomers</a><br><a href="escala.html">Scale of the Universe</a><br><a href="telescopio.html">Instruments</a><br><a href="tera.html">Earth</a></span>
+					</div>
+					<div class="colun2">
+						<span class="tit2">Astrophysics</span><br>
+						<span class="col2"><a href="doppler.html">Doppler Effect</a><br><a href="mare.html">Tidal Force</a><br><a href="kepler.html">Kepler's Laws</a><br><a href="eletromagnetismo.html">Electromagnetism</a><br><a href="bigbang.html">Big Bang</a><br><a href="classificacao.html">Spectral Classification</a><br><a href="diagrama.html">HR Diagram</a></span>
+					</div>
+					<div class="colun3">
+						<span class="tit3">Contacts</span><br>
+						<span class="col3"><a href="https://twitter.com/mousedesvio">Twitter</a><br><a href="https://www.instagram.com/pedroand6/">Instagram</a><br><a href="mailto:redbrickcar2@gmail.com">redbrickcar2@gmail.com</a><br></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Bibliotecas Javascript aqui -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script type="text/javascript" src="https://getbootstrap.com.br/docs/4.1/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

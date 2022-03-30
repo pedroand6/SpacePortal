@@ -1,0 +1,546 @@
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0 auto;
+}
+
+a, a:link, a:hover, a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+.texto a{
+  text-decoration: underline;
+}
+
+.links{
+  word-break: break-all;
+}
+
+a:hover{
+  color: #858585;
+}
+
+::-webkit-scrollbar {
+  width: 1.2vh;
+}...
+      
+::-webkit-scrollbar-track{
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#888;
+  border-radius: 2vh;
+}
+      
+::-webkit-scrollbar-thumb:hover{
+  background:#555;
+}
+
+#body{
+  overflow-x: hidden !important;
+}
+
+#body{
+  height: 100%;
+  width: 100vw;
+  margin: 0px;
+  overflow: hidden;
+}
+
+#loading{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0; 
+  background-color: black; 
+  z-index: 999;
+}
+
+#loading div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+
+nav{
+  width: 100vw;
+  height: 12vh;
+  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: row;
+}
+
+.tagsa{
+  display: none;
+  position: absolute;
+}
+
+#tagsa{
+  display: none;
+  position: absolute;
+}
+  
+.tag1a, .tag2a{
+  display: none;
+  position: absolute;
+}
+
+main{
+  min-height: 190vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: 0% 70%;
+  background-repeat: no-repeat;
+  background-image: url(spring.png);
+  background-attachment: fixed;
+  position: relative;
+}
+
+.fundo{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.aa{
+  margin-left: 0;
+}
+
+.logogo{
+  flex: 0.25;
+  height: 12vh;
+}
+
+.tagsa{
+  display: none;
+}
+
+#tagsa{
+  display: none;
+}
+
+.tags{
+  display: none;
+}
+
+.tag1, .tag2{
+  display: none;
+}
+
+#tags{
+  flex: 0.5;
+  display: flex;
+  flex-direction: row;
+  position: static;
+  margin-left: 5vw;
+  margin-right: 10vh;
+}
+
+.tag1, .tag2{
+  height: 100%;
+  width: auto;
+  display: block;
+  position: relative;
+}
+
+.astronomia, .astrofísica{
+  font-size: 3vh;
+  color: white;
+  font-family: bahnschrift;
+}
+
+.astron, .astrof{
+  margin-top: 4.3vh;
+}
+
+.seta1{
+  width: 2vh;
+}
+
+.menu21{
+  display: none;
+  height: auto;
+  width: 15vw;
+  min-width: 28vh;
+  top: 100%;
+  padding-left: 0;
+  max-height: 48vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: rgb(0,0,0);
+  position: absolute;
+  z-index: 1;
+  margin-left: -10%;
+}
+
+.tag2:hover .menu22{
+  display: block;
+}
+
+.menu22{
+  display: none;
+  height: auto;
+  width: 15vw;
+  min-width: 28vh;
+  top: 100%;
+  padding-left: 0;
+  max-height: 48vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: rgb(0,0,0);
+  position: absolute;
+  z-index: 1;
+  margin-left: -20%;
+}
+
+.icon{
+  font-size: 6vw;
+  color:#ffffff;
+  display:none;
+  position: absolute;
+  right:0px;
+  top:0px;
+  line-height: 12vh;
+  padding-right: 9vw;
+  padding-left: 9vw;
+}
+
+.tag1:hover .menu21{
+  display: block;
+}
+
+.tag1:hover .astronomia{
+  color: #858585;
+}
+
+.lista:hover{
+  background-color: #828282;
+}
+
+.lista{
+  display: block;
+  font-family: bahnschrift;
+  font-size: 2.5vh;
+  color: white;
+  text-align: center;
+  min-height: 12vh;
+  line-height: 12vh;
+}
+
+.inicio{
+  height: 44.9%;
+  width: 100%;
+  min-height: 90vh;
+}
+
+.scro{
+  text-align: center;
+}
+
+.scrollseta{
+  width: 5vw;
+  margin-top: 75vh;
+  z-index: 0;
+}
+
+.conteudo{
+  height: 50%;
+  width: 100%;
+  flex: 0.6;
+}
+
+.final{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  background-size: all;
+  padding-top: 5vw;
+}
+
+.titu{
+  text-align: center;
+}
+
+.tito{
+  font-family: bahnschrift;
+  font-size: 3vw;
+  color: white;
+  text-align: center;
+}
+
+.artigo{
+  width: 65%;
+  padding-top: 4vw;
+}
+
+.image{
+  float: right;
+  padding: 2vw;
+}
+
+.imagem{
+  width: 35vw;
+  padding-bottom: 4vh;
+}
+
+.texto{
+  font-family: bahnschrift;
+  font-size: 2.5vh;
+  line-height: 4vh;
+  color: white;
+  text-align: justify;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.legenda{
+  font-family: bahnschrift;
+  font-size: 2vh;
+  color: white;
+  margin-top: -3vh;
+}
+
+strong{
+  font-family: bahnschrift;
+  font-size: 3.5vh;
+  line-height: 5vh;
+  color: white;
+}
+
+footer{
+  width: 100%;
+  height: 36vw;
+  background-color: rgb(0,0,0);
+  position: relative;
+  bottom: 0;
+}
+
+.futa{
+  display: flex;
+  flex-direction: row;
+  padding: 2.5vw;
+}
+
+.copylogo{
+  width: 10vw;
+}
+
+.cope{
+  display: flex;
+  flex-direction: column;
+  margin-top: -1.4vw;
+}
+
+.coluns{
+  display: flex;
+  flex-direction: row;
+}
+
+.copy{
+  color: #d9d9d9;
+  font-family: bahnschrift;
+  font-size: 1vw;
+  text-align: center;
+}
+
+.colun1, .colun2, .colun3{
+  margin-right: 5vw;
+}
+
+.tit1, .tit2, .tit3{
+  line-height: 4vw;
+}
+
+.tit1{
+  color: #d9d9d9;
+  font-family: bahnschrift;
+  font-size: 1.5vw;
+}
+
+.col1{
+  color: white;
+  font-family: bahnschrift;
+  font-size: 1vw;
+  line-height: 2vw;
+}
+
+.tit2{
+  color: #d9d9d9;
+  font-family: bahnschrift;
+  font-size: 1.5vw;
+}
+
+.col2{
+  color: white;
+  font-family: bahnschrift;
+  font-size: 1vw;
+  line-height: 2vw;
+}
+
+.tit3{
+  color: #d9d9d9;
+  font-family: bahnschrift;
+  font-size: 1.5vw;
+}
+
+.col3{
+  color: white;
+  font-family: bahnschrift;
+  font-size: 1vw;
+  line-height: 2vw;
+}
+
+@media (max-width: 800px){
+  #tags{
+    display: none;
+  }
+  #tagsa{
+    height: auto;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 12vh;
+    padding-left: 0;
+    z-index: 1;
+    background-color: rgb(0,0,0);
+    width: 100%;
+  }
+  .tag1a,.tag2a{
+    height: auto;
+    display: block;
+    min-height: 12vh;
+    position: static;
+    text-align: center;
+    padding-left: 0;
+    width: 100%;
+  }
+  #astron, #astrof{
+    line-height: 12vh;
+  }
+  .listaa{
+    display: block;
+    font-family: bahnschrift;
+    color: white;
+    width: 100%;
+    font-size: 2.5vh;
+    left: 0;
+    text-align: center;
+    padding-left: 0;
+    min-height: 12vh;
+    line-height: 12vh;
+  }
+  #menu21a{
+    display: none;
+    width: 100%;
+    max-height: none;
+    overflow-y: auto;
+    height: 36vh;
+    left: 0;
+    text-align: center;
+    overflow-x: hidden;
+    background-color: rgb(0,0,0);
+    padding-left: 0;
+    position: relative;
+    margin-left: 0;
+  }
+  #menu22a{
+    display: none;
+    width: 100%;
+    max-height: none;
+    overflow-y: auto;
+    height: 36vh;
+    left: 0;
+    text-align: center;
+    padding-left: 0;
+    overflow-x: hidden;
+    background-color: rgb(0,0,0);
+    position: relative;
+    margin-left: 0;
+  }
+  .listaa:hover{
+    background-color: #828282;
+  }
+  .aa{
+    margin-left: 0;
+  }
+  .logogo{
+    flex: 1;
+  }
+  .icon{
+    display: block;
+  }
+  main{
+    min-height: 250vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: 0% 70%;
+    background-repeat: no-repeat;
+    background-image: url(spring.png);
+    background-attachment: fixed;
+    position: relative;
+  }
+  .final{
+    width: 100%;
+    min-height: 160vh;
+    background-color: rgba(0,0,0,0.8);
+    background-size: all;
+  }
+  footer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    position: relative;
+    bottom: 0;
+  }
+  .futa{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5vw;
+  }
+  .coluns{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .cope{
+    margin-left: 8vw;
+    padding-bottom: 5vw;
+  }
+  .copylogo{
+    width: 25vh;
+  }
+  .copy{
+    font-size: 2.5vh;
+  }
+  .colun1, .colun2,.colun3{
+    margin-left: 10vw;
+    padding-bottom: 3vw;
+  }
+  .tit1,.tit2,.tit3{
+    font-size: 4vh;
+    line-height: 8vh;
+  }
+  .col1,.col2,.col3{
+    font-size: 3vh;
+    line-height: 7vh;
+  }
+  .image{
+    float: none;
+    padding: 2vw;
+  }
+  .imagem{
+    width: 100%;
+  }
+  .tito{
+    font-size: 5vw;
+  }
+}

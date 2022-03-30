@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SpacePortal | Espectro eletromagnético</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="logo.png">
+		<link rel="stylesheet" type="text/css" href="eletromagnetismopc.css">
+		<link rel="stylesheet" type="text/css" media="screen and (max-device-width:800px)" href="eletromagnetismocel.css">
+		<script type="text/javascript" src="homejs.js"></script>
+	</head>
+	<body onload="load()" id="body">
+		<div id="loading">
+			<div>
+				<img src="loading.gif" style="width: 200px;">
+			</div>
+		</div>
+		<nav>
+			<a href="index.html" class="aa">
+				<div class="logotipo">
+					<img src="logotipo.png" class="logogo">
+				</div>
+			</a>			
+			<ul class="tags" id="tags">
+				<li class="tag1">
+					<a href="#" class="astronomia"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21">
+						<a href="historia.html" class="l1"><li class="lista">Astronomia Antiga</li></a>
+						<a href="constelacao.html" class="l1"><li class="lista">Constelações</li></a>
+						<a href="estacao.html" class="l1"><li class="lista">Estações do Ano</li></a>
+						<a href="antigos.html" class="l1"><li class="lista">Antigos astrônomos</li></a>
+						<a href="telescopio.html" class="l1"><li class="lista">Instrumentos</li></a>
+						<a href="fases.html" class="l1"><li class="lista">Fases da Lua</li></a>
+						<a href="eclipse.html" class="l1"><li class="lista">Eclipses</li></a>
+						<a href="solar.html" class="l1"><li class="lista">Sistema Solar</li></a>
+						<a href="escala.html" class="l1"><li class="lista">Escala do Universo</li></a>
+						<a href="tera.html" class="l1"><li class="lista">Terra</li></a>
+					</ul>
+				</li>
+				<li class="tag2">
+					<a href="#" class="astrofísica"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22">
+						<a href="doppler.html" class="l1"><li class="lista">Efeito Doppler</li></a>
+						<a href="mare.html" class="l1"><li class="lista">Efeito de Maré</li></a>
+						<a href="kepler.html" class="l1"><li class="lista">Leis de Kepler</li></a>
+						<a href="eletromagnetismo.html" class="l1"><li class="lista">Eletromagnetismo</li></a>
+						<a href="bigbang.html" class="l1"><li class="lista">Big Bang</li></a>
+						<a href="classificacao.html" class="l1"><li class="lista">Classificação Espectral</li></a>
+						<a href="diagrama.html" class="l1"><li class="lista">Diagrama HR</li></a>
+					</ul>
+				</li>
+			</ul>
+			<ul class="tagsa" id="tagsa">
+				<li class="tag1a">
+					<a href="#" class="astronomia" id="aston" onclick="click2();"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21a" id="menu21a">
+						<a href="historia.html" class="l1a"><li class="listaa">Astronomia Antiga</li></a>
+						<a href="constelacao.html" class="l1a"><li class="listaa">Constelações</li></a>
+						<a href="estacao.html" class="l1a"><li class="listaa">Estações do Ano</li></a>
+						<a href="antigos.html" class="l1a"><li class="listaa">Antigos astrônomos</li></a>
+						<a href="telescopio.html" class="l1a"><li class="listaa">Instrumentos</li></a>
+						<a href="fases.html" class="l1a"><li class="listaa">Fases da Lua</li></a>
+						<a href="eclipse.html" class="l1a"><li class="listaa">Eclipses</li></a>
+						<a href="solar.html" class="l1a"><li class="listaa">Sistema Solar</li></a>
+						<a href="escala.html" class="l1a"><li class="listaa">Escala do Universo</li></a>
+						<a href="tera.html" class="l1a"><li class="listaa">Terra</li></a>
+					</ul>
+				</li>
+				<li class="tag2a">
+					<a href="#" class="astrofísica" id="astof" onclick="click1();"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22a" id="menu22a">
+						<a href="doppler.html" class="l1a"><li class="listaa">Efeito Doppler</li></a>
+						<a href="mare.html" class="l1a"><li class="listaa">Efeito de Maré</li></a>
+						<a href="kepler.html" class="l1a"><li class="listaa">Leis de Kepler</li></a>
+						<a href="eletromagnetismo.html" class="l1a"><li class="listaa">Eletromagnetismo</li></a>
+						<a href="bigbang.html" class="l1a"><li class="listaa">Big Bang</li></a>
+						<a href="classificacao.html" class="l1a"><li class="listaa">Classificação Espectral</li></a>
+						<a href="diagrama.html" class="l1a"><li class="listaa">Diagrama HR</li></a>
+					</ul>
+				</li>
+			</ul>
+			<a href="#" class="icon" onclick="verificaClick();">
+				&equiv;
+			</a>
+		</nav>
+		<main>
+			<div class="fundo">
+				<div class="inicio">
+					<div class="scro">
+						<a href="#conteudo"><img src="seta.png" class="scrollseta"></a>
+					</div>
+				</div>
+				<div class="final" id="conteudo">
+					<div class="titu">
+						<span class="tito">Espectro eletromagnético</span>
+					</div>
+					<div class="artigo">
+						<div class="text">
+							<strong>Ondas eletromagnéticas </strong><br>
+							<p class="texto">As ondas eletromagnéticas são ondas como a luz, sendo a luz, apenas um tipo de onda eletromagnética. Elas são a junção de um campo magnético e um campo elétrico oscilantes, e vão existir sempre que houver uma carga elétrica oscilando. As ondas geradas terão a mesma frequência da oscilação da carga elétrica.</p><br>
+							<strong>Espectro eletromagnético </strong><br>
+							<p class="texto">
+								Classificam-se as ondas em um espectro por sua frequência ou comprimento de onda. O espectro é uma junção de todos os tipos de ondas, incluindo a luz. Abaixo encontra-se uma representação do espectro eletromagnético:
+							</p><br>
+						</div>
+						<div class="image">
+							<img src="espectroaa.png" class="imagem" alt="Espectro eletromagnético">
+							<p class="legenda">Classificação das ondas eletromagnéticas dentro do espectro eletromagnético.</p><br>
+						</div>
+						<div class="text">
+							<strong>Relação com a temperatura </strong><br>
+							<p class="texto">
+								Para o corpo emitir certa radiação, ele precisa estar a uma determinada temperatura. Há uma classificação para essa temperatura, e ela vai da emissão de radiação dos raios gama até a emissão das ondas de rádio.<br><br>
+								> Os raios gama possuem um comprimento de onda menor que 0,01 nanômetro, e para serem emitidos, a temperatura do corpo precisa ser maior do que 100000000K.<br><br>
+								> Os raios X possuem entre 0,01 e 20 nanômetros, e para serem emitidos, a temperatura do corpo precisa estar entre 1000000K e 100000000K.<br><br>
+								> Os raios ultravioleta possuem entre 20 e 400 nanômetros, e para serem emitidos, a temperatura do corpo precisa estar entre 10000K e 1000000K.<br><br>
+								> A luz visível possui entre 400 e 700 nanômetros, e para serem emitidos, a temperatura do corpo precisa estar entre 1000K e 10000K.<br><br>
+								> Os raios infravermelhos possuem entre 700 e 1000000 nanômetros, e para serem emitidos, a temperatura do corpo precisa estar entre 10K e 1000K.<br><br>
+								> As ondas de rádio possuem mais de 1000000 nanômetros, e para serem emitidas, a temperatura do corpo precisa ser menor que 10K.<br><br>
+							</p><br>
+							<strong>Propriedades das ondas </strong>
+							<p class="texto">
+								Frequência (medida em hertz) é a quantidade de oscilações por segundo. Quando falamos sobre ondas, quanto maior for a frequência de uma onda, maior será a energia dela. <br><br>
+								Comprimento de onda (medido em metros) é a medida da distância entre uma crista (ponto mais alto da onda) e outra crista de uma onda. Quanto maior for o comprimento de onda de uma onda, menor será sua frequência, e portanto, sua energia.<br><br>
+								O período de uma onda, é o tempo que ela demora pra completar um comprimento de onda. Sendo assim, segundo a fórmula, o período da oscilação é igual o inverso da frequência da onda (T = 1/f). Exemplo: Se ela oscila 10 vezes por segundo, cada oscilação dura 1/10 de segundo.<br><br>
+								Assim, é possível ver que o período vezes a velocidade, é igual ao comprimento de onda [T(s) . c(m/s) = λ(m)]. E com essa fórmula, é possível descobrir que a velocidade de toda onda eletromagnética é aproximadamente 300.000.000 m/s, o que nos leva a outras duas fórmulas fundamentais do eletromagnetismo.
+							</p>
+							<p class="pomeio">
+								c(m/s) = λ(m) . y(hz)<br><br>
+								c(m/s) = λ(m) / T(s)<br><br>
+							</p><br>
+							<strong>Leis fundamentais </strong><br>
+							<p class="texto">
+								> Lei do inverso do quadrado da distância
+							</p>
+							<p class="pomeio">
+								L = 4π . d² . f<br><br>
+								A luminosidade de um corpo será a área total vezes o fluxo (energia) por metro quadrado. Essa lei mostra a dispersão de luz vinda de uma fonte, conforme a distância dela aumenta.
+							</p>
+							<p class="texto">
+								> Lei de Stefan-Boltzmann
+							</p>
+							<p class="pomeio">
+								f = σ (constante de stefan-boltzmann) . T⁴ (temperatura)<br>
+								σ = 5,7.10⁻⁸ W.m⁻².k⁻⁴<br><br>
+								Esta lei relaciona diretamente o fluxo com a temperatura.
+							</p>
+							<p class="texto">
+								> Lei de Wien
+							</p>
+							<p class="pomeio">
+								λ(máximo) = 3 . 10⁶ / T<br>
+								Com esta lei, ao medir o espectro da estrela e descobrir o pico de seu comprimento de onda, já se pode estimar a sua temperatura.
+							</p><br>
+							<strong>Tipos de espectros </strong>
+							<p class="texto">
+								O prisma de Newton divide a luz branca em raias (linhas). Estas raias são analisadas por um espectrógrafo, e podem estar em emissão ou absorção.<br><br>
+								No modelo do átomo de hidrogênio de Bohr, um elétron que passa de um nível mais alto para um mais baixo, libera energia na forma de fótons, e cada elemento químico, dessa forma, libera ondas com diferentes comprimentos de onda.<br><br>
+								Quando um elétron emite luz, ele produz uma linha de emissão, e quando um elétron absorve luz, ele produz uma linha de absorção.<br><br>
+								Existem três tipos de espectros: os espectros contínuos, que não possuem linhas de absorção, apenas de emissão; os espectros de emissão, que são criados por corpos de baixa densidade formados de poucos ou apenas um elemento, e emitem luz em específicos comprimentos de onda; os espectros de absorção, que são criados por um corpo que emite um espectro contínuo, e um corpo com baixa densidade que absorve algumas das ondas, assim, deixando linhas de emissão e algumas linhas de absorção no espectro.<br><br>
+								Estrelas criam espectros contínuos, com linhas de absorção. E a partir da análise desses espectros, é possível saber a composição dessas estrelas, como por exemplo o Sol, que a partir de uma análise do seu espectro, foi possível observar que ele possuía um espectro bem semelhante com o de moléculas do gás hidrogênio.<br><br>
+							</p>
+						</div>
+						<div class="image">
+							<img src="especto.png" class="imagem" alt="Classificação pelo espectro de absorção"><br>
+							<p class="legenda">Exemplo de espectros contínuo, de emissão e de absorção.</p>
+						</div>
+						<div class="text">
+							<p class="texto">
+								<strong>Bibliografia</strong><br><br>
+								<a href="http://astro.if.ufrgs.br/rad/espec/espec.htm" class="links">http://astro.if.ufrgs.br/</a><br>
+								<a href="http://www.if.ufrgs.br/fis02001/aulas/aula_espec.htm" class="links">http://www.if.ufrgs.br/</a><br>
+								<a href="https://pt.khanacademy.org/science/chemistry/electronic-structure-of-atoms/bohr-model-hydrogen/a/spectroscopy-interaction-of-light-and-matter" class="links">https://pt.khanacademy.org/</a><br>
+								<a href="https://www.youtube.com/watch?v=9BfTB1DxaJc&list=PLxI8Can9yAHd7kUPviBHxr-49QEl7PRXR&index=8&t=4s&ab_channel=UNIVESP" class="links">Vídeo do curso de Astronomia da Univesp</a><br>
+								<br><br><br><br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="futa">
+				<div class="cope">
+					<img src="logotipo.png" class="copylogo">
+					<span class="copy">&copy; SpacePortal 2020<br><br>
+						<a href="recom.html">Recomendações</a><br></span>
+				</div>
+				<div class="coluns">
+					<div class="colun1">
+						<span class="tit1">Astronomia</span><br>
+						<span class="col1"><a href="historia.html">Astronomia da Antiguidade</a><br><a href="fases.html">Fases da Lua</a><br><a href="constelacao.html">Constelações</a><br><a href="eclipse.html">Eclipses</a><br><a href="estacao.html">Estações do ano</a><br><a href="solar.html">Sistema Solar</a><br><a href="antigos.html">Astrônomos da antiguidade</a><br><a href="escala.html">Escala do Universo</a><br><a href="telescopio.html">Instrumentos de observação</a><br><a href="tera.html">Terra</a></span>
+					</div>
+					<div class="colun2">
+						<span class="tit2">Astrofísica</span><br>
+						<span class="col2"><a href="doppler.html">Efeito Doppler</a><br><a href="mare.html">Efeito de Maré</a><br><a href="kepler.html">Leis de Kepler</a><br><a href="eletromagnetismo.html">Espectro eletromagnético</a><br><a href="bigbang.html">Big Bang</a><br><a href="classificacao.html">Classificação Espectral</a><br><a href="diagrama.html">Diagrama HR</a></span>
+					</div>
+					<div class="colun3">
+						<span class="tit3">Contato</span><br>
+						<span class="col3"><a href="https://twitter.com/mousedesvio">Twitter</a><br><a href="https://www.instagram.com/pedroand6/">Instagram</a><br><a href="mailto:redbrickcar2@gmail.com">redbrickcar2@gmail.com</a><br></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Bibliotecas Javascript aqui -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script type="text/javascript" src="https://getbootstrap.com.br/docs/4.1/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

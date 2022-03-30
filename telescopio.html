@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SpacePortal | Instrumentos de observação</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="logo.png">
+		<link rel="stylesheet" type="text/css" href="telescopiopc.css">
+		<link rel="stylesheet" type="text/css" media="screen and (max-device-width:800px)" href="telescopiocel.css">
+		<script type="text/javascript" src="homejs.js"></script>
+	</head>
+	<body onload="load()" id="body">
+		<div id="loading">
+			<div>
+				<img src="loading.gif" style="width: 200px;">
+			</div>
+		</div>
+		<nav>
+			<a href="index.html" class="aa">
+				<div class="logotipo">
+					<img src="logotipo.png" class="logogo">
+				</div>
+			</a>			
+			<ul class="tags" id="tags">
+				<li class="tag1">
+					<a href="#" class="astronomia"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21">
+						<a href="historia.html" class="l1"><li class="lista">Astronomia Antiga</li></a>
+						<a href="constelacao.html" class="l1"><li class="lista">Constelações</li></a>
+						<a href="estacao.html" class="l1"><li class="lista">Estações do Ano</li></a>
+						<a href="antigos.html" class="l1"><li class="lista">Antigos astrônomos</li></a>
+						<a href="telescopio.html" class="l1"><li class="lista">Instrumentos</li></a>
+						<a href="fases.html" class="l1"><li class="lista">Fases da Lua</li></a>
+						<a href="eclipse.html" class="l1"><li class="lista">Eclipses</li></a>
+						<a href="solar.html" class="l1"><li class="lista">Sistema Solar</li></a>
+						<a href="escala.html" class="l1"><li class="lista">Escala do Universo</li></a>
+						<a href="tera.html" class="l1"><li class="lista">Terra</li></a>
+					</ul>
+				</li>
+				<li class="tag2">
+					<a href="#" class="astrofísica"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22">
+						<a href="doppler.html" class="l1"><li class="lista">Efeito Doppler</li></a>
+						<a href="mare.html" class="l1"><li class="lista">Efeito de Maré</li></a>
+						<a href="kepler.html" class="l1"><li class="lista">Leis de Kepler</li></a>
+						<a href="eletromagnetismo.html" class="l1"><li class="lista">Eletromagnetismo</li></a>
+						<a href="bigbang.html" class="l1"><li class="lista">Big Bang</li></a>
+						<a href="classificacao.html" class="l1"><li class="lista">Classificação Espectral</li></a>
+						<a href="diagrama.html" class="l1"><li class="lista">Diagrama HR</li></a>
+					</ul>
+				</li>
+			</ul>
+			<ul class="tagsa" id="tagsa">
+				<li class="tag1a">
+					<a href="#" class="astronomia" id="aston" onclick="click2();"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21a" id="menu21a">
+						<a href="historia.html" class="l1a"><li class="listaa">Astronomia Antiga</li></a>
+						<a href="constelacao.html" class="l1a"><li class="listaa">Constelações</li></a>
+						<a href="estacao.html" class="l1a"><li class="listaa">Estações do Ano</li></a>
+						<a href="antigos.html" class="l1a"><li class="listaa">Antigos astrônomos</li></a>
+						<a href="telescopio.html" class="l1a"><li class="listaa">Instrumentos</li></a>
+						<a href="fases.html" class="l1a"><li class="listaa">Fases da Lua</li></a>
+						<a href="eclipse.html" class="l1a"><li class="listaa">Eclipses</li></a>
+						<a href="solar.html" class="l1a"><li class="listaa">Sistema Solar</li></a>
+						<a href="escala.html" class="l1a"><li class="listaa">Escala do Universo</li></a>
+						<a href="tera.html" class="l1a"><li class="listaa">Terra</li></a>
+					</ul>
+				</li>
+				<li class="tag2a">
+					<a href="#" class="astrofísica" id="astof" onclick="click1();"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22a" id="menu22a">
+						<a href="doppler.html" class="l1a"><li class="listaa">Efeito Doppler</li></a>
+						<a href="mare.html" class="l1a"><li class="listaa">Efeito de Maré</li></a>
+						<a href="kepler.html" class="l1a"><li class="listaa">Leis de Kepler</li></a>
+						<a href="eletromagnetismo.html" class="l1a"><li class="listaa">Eletromagnetismo</li></a>
+						<a href="bigbang.html" class="l1a"><li class="listaa">Big Bang</li></a>
+						<a href="classificacao.html" class="l1a"><li class="listaa">Classificação Espectral</li></a>
+						<a href="diagrama.html" class="l1a"><li class="listaa">Diagrama HR</li></a>
+					</ul>
+				</li>
+			</ul>
+			<a href="#" class="icon" onclick="verificaClick();">
+				&equiv;
+			</a>
+		</nav>
+		<main>
+			<div class="fundo">
+				<div class="inicio">
+					<div class="scro">
+						<a href="#conteudo"><img src="seta.png" class="scrollseta"></a>
+					</div>
+				</div>
+				<div class="final" id="conteudo">
+					<div class="titu">
+						<span class="tito">Instrumentos de observação</span>
+					</div>
+					<div class="artigo">
+						<div class="text">
+							<strong>História</strong><br>
+							<div class="image">
+								<img src="observatorio.png" class="imagem" alt="Transmissão Rebelde, Battlefield 4.">
+								<p class="legenda">Foto do radiotelescópio de Arecibo. Infelizmente desativado para sempre, após novembro de 2020.</p>
+							</div>
+							<p class="texto">A história dos instrumentos de observação começa bem antes da invenção do telescópio. Muitos observatórios astronômicos foram construídos no Oriente Médio por volta do século VII, e na Europa por volta do século IX, com o domínio árabe da península Ibérica. Estes, utilizavam de instrumentos mecânicos que ajudavam na orientação do céu, marcando a posição das estrelas, e até mesmo o tempo certo em que elas passavam por certo local do céu. A lente, mesmo já tendo sido explorada há muito tempo, inclusive sendo muito utilizada para batalhas e para a ciência, não havia sido utilizada na astronomia até a época de <a href="antigos.html">Galileu Galilei</a>, em 1609.<br><br>
+							Não foi ele quem inventou o telescópio por si só. O telescópio era apenas uma invenção que utilizava de duas lentes nas extremidades de um tubo, para ampliar a imagem de objetos. Mesmo tendo sido inventado por Hans Lippershey, um fabricante de óculos, Galileu levou os créditos da invenção pois ele foi o primeiro a utilizar este instrumento para fins astronômicos, e a aprimorar o telescópio refrator construído por ele, até uma ampliação de 20 vezes.</p><br>
+							<strong>Tipos de telescópios </strong><br>
+							<p class="texto">
+								É importante saber a diferença entre os dois tipos de telescópio que existem, o telescópio refletor, e o telescópio refrator.<br><br>
+								O refrator foi o inventado por Galileu, que possui duas lentes, uma em cada extremidade, e para que houvesse uma maior qualidade da imagem, era preciso que o tamanho da lente primária fosse cada vez maior, algo ruim para telescópios muito grandes, já que as lentes muito grandes se distorcem por conta da gravidade exercida sobre elas. Uma curiosidade do telescópio refrator, é que por usar de lentes para a ampliação, também ocorria uma aberração cromática com a luz, que separava o azul do vermelho, na imagem.<br><br>
+								O telescópio refletor foi inventado por Newton, e usava de espelhos para fazer esta ampliação. No telescópio de Newton, a luz entrava por uma abertura, era refletida por um espelho não convexo, que a deformava e fazia esta ampliação, sendo assim, refletida por outro espelho no centro, e indo até o foco. Este tipo de telescópio possui menos problemas com o seu porte, e por isso, é mais utilizado atualmente. Se tratando dos telescópios refletores, ainda existem também os telescópios com um outro tipo de foco chamado de foco Cassegrain, que deixa a visualização no telescópio um pouco melhor do que no outro foco, pois direciona a luz do espelho primário para um espelho secundário que a direciona para uma abertura no centro do espelho primário, tornando a direção da luz um pouco mais lógica, como se fosse com o telescópio refrator.
+							</p><br>
+							<div class="pomeio">
+								<img src="tipos.png" class="imagem1" alt="Tipos de telescópios">
+								<p class="legenda">Esquema dos tipos de telescópios citados.</p>
+							</div><br>
+							<strong>Óptica adaptativa </strong><br>
+							<p class="texto">
+								Os telescópios atualmente contam com um grande problema, que é a turbulência atmosférica. Esta turbulência, causada pela deformação da luz dos astros pelas partículas da atmosfera terrestre, é um grande problema para a astronomia. Para isso foi criada a óptica adaptativa, que se trata de minimizar o máximo possível os efeitos dessa deformação da luz. Algumas formas de resolver são, por exemplo, instalar telescópios no topo de montanhas, minimizando assim, o efeito da atmosfera, ou, como é no caso de telescópios mais modernos, dispositivos que detectam e corrigem a deformação das ondas em até 200 vezes por segundo, ou também, colocando telescópios na órbita terrestre, como é o caso do Telescópio Espacial Hubble.
+							</p><br>
+							<div class="pomeio">
+								<img src="otic.jpg" class="imagem" alt="Óptica adaptativa">
+								<p class="legenda">Esquema da óptica adaptativa.</p>
+							</div><br>
+							<strong>Radiotelescópios</strong><br>
+							<p class="texto">
+								Os radiotelescópios são outro tipo de telescópios muito importantes para a astronomia. Como a maior parte das estrelas e objetos celestes são fontes de rádio, eles acabam tendo uma grande participação nas pesquisas e nas imagens dos astros, atualmente. Outra importante vantagem destes telescópios sobre os que foram citados anteriormente, é que eles não precisam se contentar com apenas um coletando informações de cada vez, pois eles podem ser agrupados em áreas, e ter suas imagens juntadas, tendo assim, um alcance muito maior do que telescópios que analisam a luz. O maior radiotelescópio conhecido se encontra atualmente na China, e leva o nome de Five hundred meter Aperture Spherical Telescope, e o segundo maior, também muito conhecido, se encontra no Porto Rico, sendo ele, o radiotelescópio de Arecibo.
+							</p><br>
+							<strong>Bibliografia </strong><br>
+							<p class="texto">
+								<a href="http://astro.if.ufrgs.br/telesc/node1.htm" class="links">http://astro.if.ufrgs.br/</a><br>
+								<a href="http://w3.ufsm.br/rogemar/fsc819/aulas/01-telescopios.pdf" class="links">http://w3.ufsm.br/</a><br>
+								<a href="https://www.youtube.com/watch?v=p-Dvp06QZRQ&list=PLxI8Can9yAHd7kUPviBHxr-49QEl7PRXR&index=2" class="links">Vídeo do curso de Astronomia da Univesp</a>
+							</p>
+							<br><br><br><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="futa">
+				<div class="cope">
+					<img src="logotipo.png" class="copylogo">
+					<span class="copy">&copy; SpacePortal 2020<br><br>
+						<a href="recom.html">Recomendações</a><br></span>
+				</div>
+				<div class="coluns">
+					<div class="colun1">
+						<span class="tit1">Astronomia</span><br>
+						<span class="col1"><a href="historia.html">Astronomia da Antiguidade</a><br><a href="fases.html">Fases da Lua</a><br><a href="constelacao.html">Constelações</a><br><a href="eclipse.html">Eclipses</a><br><a href="estacao.html">Estações do ano</a><br><a href="solar.html">Sistema Solar</a><br><a href="antigos.html">Astrônomos da antiguidade</a><br><a href="escala.html">Escala do Universo</a><br><a href="telescopio.html">Instrumentos de observação</a><br><a href="tera.html">Terra</a></span>
+					</div>
+					<div class="colun2">
+						<span class="tit2">Astrofísica</span><br>
+						<span class="col2"><a href="doppler.html">Efeito Doppler</a><br><a href="mare.html">Efeito de Maré</a><br><a href="kepler.html">Leis de Kepler</a><br><a href="eletromagnetismo.html">Espectro eletromagnético</a><br><a href="bigbang.html">Big Bang</a><br><a href="classificacao.html">Classificação Espectral</a><br><a href="diagrama.html">Diagrama HR</a></span>
+					</div>
+					<div class="colun3">
+						<span class="tit3">Contato</span><br>
+						<span class="col3"><a href="https://twitter.com/mousedesvio">Twitter</a><br><a href="https://www.instagram.com/pedroand6/">Instagram</a><br><a href="mailto:redbrickcar2@gmail.com">redbrickcar2@gmail.com</a><br></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Bibliotecas Javascript aqui -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script type="text/javascript" src="https://getbootstrap.com.br/docs/4.1/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

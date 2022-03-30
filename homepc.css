@@ -1,0 +1,911 @@
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+	margin: 0 auto;
+}
+
+a, a:link, a:hover, a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+.texto a{
+  text-decoration: underline;
+}
+
+a:hover{
+  color: #858585;
+}
+
+::-webkit-scrollbar {
+ 	width: 1.2vh;
+}...
+			
+::-webkit-scrollbar-track{
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+	background:#888;
+  border-radius: 2vh;
+}
+			
+::-webkit-scrollbar-thumb:hover{
+	background:#555;
+}
+
+#body{
+  overflow-x: hidden !important;
+}
+
+#body{
+	height: 100%;
+	width: 100vw;
+	margin: 0px;
+  overflow: hidden;
+}
+
+#loading{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0; 
+  background-color: black; 
+  z-index: 999;
+}
+
+#loading div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+
+nav{
+	width: 100vw;
+	height: 12vh;
+	background-color: #0a0a0a;
+	display: flex;
+	flex-direction: row;
+}
+
+main{
+	min-height: 190vh;
+	width: 100vw;
+	background-size: cover;
+	background-position: 0% 70%;
+	background-repeat: no-repeat;
+	background-image: url(telescopio.jpg);
+	background-attachment: fixed;
+	position: relative;
+}
+
+.fundo{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.aa{
+  margin-left: 0;
+}
+
+.logogo{
+  flex: 0.25;
+  height: 12vh;
+}
+
+.tagsa{
+  display: none;
+}
+
+#tagsa{
+  display: none;
+}
+
+.tags{
+  display: none;
+}
+
+.tag1, .tag2{
+  display: none;
+}
+
+#tags{
+	flex: 0.5;
+	display: flex;
+	flex-direction: row;
+	position: static;
+	margin-left: 5vw;
+  margin-right: 10vh;
+}
+
+.tag1, .tag2{
+	height: 100%;
+	width: auto;
+	display: block;
+	position: relative;
+}
+
+.astronomia, .astrofísica{
+	font-size: 3vh;
+	color: white;
+	font-family: bahnschrift;
+}
+
+.astron, .astrof{
+	margin-top: 4.3vh;
+}
+
+.seta1{
+	width: 2vh;
+}
+
+.menu21{
+	display: none;
+	height: auto;
+  width: 15vw;
+  min-width: 28vh;
+	top: 100%;
+  padding-left: 0;
+  max-height: 48vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+	background-color: rgb(0,0,0);
+	position: absolute;
+	z-index: 1;
+  margin-left: -10%;
+}
+
+.tag2:hover .menu22{
+  display: block;
+}
+
+.menu22{
+  display: none;
+  height: auto;
+  width: 15vw;
+  min-width: 28vh;
+  top: 100%;
+  padding-left: 0;
+  max-height: 48vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: rgb(0,0,0);
+  position: absolute;
+  z-index: 1;
+  margin-left: -20%;
+}
+
+.icon{
+  font-size: 6vw;
+  color:#ffffff;
+  display:none;
+  position: absolute;
+  right:0px;
+  top:0px;
+  line-height: 12vh;
+  padding-right: 9vw;
+  padding-left: 9vw;
+}
+
+.tag1:hover .menu21{
+	display: block;
+}
+
+.tag1:hover .astronomia{
+	color: #858585;
+}
+
+.lista:hover{
+  background-color: #828282;
+}
+
+.lista{
+	display: block;
+	font-family: bahnschrift;
+	font-size: 2.5vh;
+	color: white;
+  text-align: center;
+  min-height: 12vh;
+  line-height: 12vh;
+}
+
+.inicio{
+	height: 44.9%;
+	width: 100%;
+  min-height: 90vh;
+}
+
+.scro{
+  text-align: center;
+}
+
+.scrollseta{
+  width: 5vw;
+  margin-top: 75vh;
+  z-index: 0;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+    transition: none;
+  }
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+  .carousel-item-next.carousel-item-left,
+  .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.carousel-item-next,
+.active.carousel-item-right {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+  .carousel-item-next,
+  .active.carousel-item-right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.carousel-item-prev,
+.active.carousel-item-left {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+  .carousel-item-prev,
+  .active.carousel-item-left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-duration: .6s;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+  .carousel-fade .carousel-item-next,
+  .carousel-fade .carousel-item-prev,
+  .carousel-fade .carousel-item.active,
+  .carousel-fade .active.carousel-item-left,
+  .carousel-fade .active.carousel-item-prev {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 15%;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: .9;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 1vw;
+  height: 1vw;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  position: relative;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 3vw;
+  height: 0.3vw;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-indicators li::before {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  content: "";
+}
+
+.carousel-indicators li::after {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  content: "";
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.carousel{
+  width: 80%;
+  z-index: 1;
+  margin-bottom: 1vw;
+}
+
+.carousel-item{
+  height: 36vw;
+  width: 100%;
+  background-color: rgb(0,0,0);
+  padding-left: 10vw;
+}
+.carousel-item  img{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+h1{
+	width: 100%;
+  height: 5vw;
+  padding: 2vw;
+  font-size: 2vw;
+	text-align: left;
+	font-family: bahnschrift;
+  background-color: rgba(117, 117, 117, 0.7);
+}
+
+.descrição{
+  font-size: 1.25vw;
+  line-height: 3vw;
+}
+
+.conteudo{
+  height: 50%;
+  width: 100%;
+  flex: 0.6;
+}
+
+.final{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  background-size: all;
+}
+
+.carosoetext{
+  width: 100%;
+  height: all;
+  padding-top: 4vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.sobreeu{
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  margin-right: 4vw;
+}
+
+.titu1, .titu2{
+  font-size: 2vw;
+  color: white;
+  font-family: bahnschrift;
+  text-align: left;
+  z-index: 1;
+}
+
+.sob1, .sob2{
+  width: 80%;
+}
+
+.sob1{
+  margin-bottom: 1vw;
+}
+
+.sob2{
+  margin-top: 1vw;
+}
+
+.sobr1, .sobr2{
+  font-size: 1.2vw;
+  color: white;
+  font-family: bahnschrift;
+  text-align: left;
+  z-index: 1;
+  line-height: 2vw;
+  padding-top: 1vw;
+}
+
+.redessco{
+  font-family: bahnschrift;
+  font-size: 1.5vw;
+  color: white;
+  z-index: 1;
+  margin-left: 10%;
+}
+
+.icone{
+  width: 2vw;
+  position: absolute;
+}
+
+#i1{
+  margin-left: 1vw;
+}
+
+#i1:hover{
+  transform: translateY(-0.5vw);
+}
+
+#i2{
+  margin-left: 3.5vw;
+}
+
+#i2:hover{
+  transform: translateY(-0.5vw);
+}
+
+#i3{
+  margin-left: 6vw;
+}
+
+#i3:hover{
+  transform: translateY(-0.5vw);
+}
+
+footer{
+  width: 100%;
+  height: 36vw;
+  background-color: rgb(0,0,0);
+  position: relative;
+  bottom: 0;
+}
+
+.futa{
+  display: flex;
+  flex-direction: row;
+  padding: 2.5vw;
+}
+
+.copylogo{
+  width: 10vw;
+}
+
+.cope{
+  display: flex;
+  flex-direction: column;
+  margin-top: -1.4vw;
+}
+
+.coluns{
+  display: flex;
+  flex-direction: row;
+}
+
+.copy{
+  color: #d9d9d9;
+  font-family: bahnschrift;
+  font-size: 1vw;
+  text-align: center;
+}
+
+.colun1, .colun2, .colun3{
+  margin-right: 5vw;
+}
+
+.tit1, .tit2, .tit3{
+  line-height: 4vw;
+}
+
+.tit1{
+  color: #d9d9d9;
+  font-family: bahnschrift;
+  font-size: 1.5vw;
+}
+
+.col1{
+  color: white;
+  font-family: bahnschrift;
+  font-size: 1vw;
+  line-height: 2vw;
+}
+
+.tit2{
+  color: #d9d9d9;
+  font-family: bahnschrift;
+  font-size: 1.5vw;
+}
+
+.col2{
+  color: white;
+  font-family: bahnschrift;
+  font-size: 1vw;
+  line-height: 2vw;
+}
+
+.tit3{
+  color: #d9d9d9;
+  font-family: bahnschrift;
+  font-size: 1.5vw;
+}
+
+.col3{
+  color: white;
+  font-family: bahnschrift;
+  font-size: 1vw;
+  line-height: 2vw;
+}
+
+.tagsa{
+  display: none;
+  position: absolute;
+}
+
+#tagsa{
+  display: none;
+  position: absolute;
+}
+  
+.tag1a, .tag2a{
+  display: none;
+  position: absolute;
+}
+
+
+@media (max-width: 800px){
+  #tags{
+    display: none;
+  }
+  #tagsa{
+    height: auto;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 12vh;
+    padding-left: 0;
+    z-index: 1;
+    background-color: rgb(0,0,0);
+    width: 100%;
+  }
+  .tag1a,.tag2a{
+    height: auto;
+    display: block;
+    min-height: 12vh;
+    position: static;
+    text-align: center;
+    padding-left: 0;
+    width: 100%;
+  }
+  #astron, #astrof{
+    line-height: 12vh;
+  }
+  .listaa{
+    display: block;
+    font-family: bahnschrift;
+    color: white;
+    width: 100%;
+    font-size: 2.5vh;
+    left: 0;
+    text-align: center;
+    padding-left: 0;
+    min-height: 12vh;
+    line-height: 12vh;
+  }
+  #menu21a{
+    display: none;
+    width: 100%;
+    max-height: none;
+    overflow-y: auto;
+    height: 36vh;
+    left: 0;
+    text-align: center;
+    overflow-x: hidden;
+    background-color: rgb(0,0,0);
+    padding-left: 0;
+    position: relative;
+    margin-left: 0;
+  }
+  #menu22a{
+    display: none;
+    width: 100%;
+    max-height: none;
+    overflow-y: auto;
+    height: 36vh;
+    left: 0;
+    text-align: center;
+    padding-left: 0;
+    overflow-x: hidden;
+    background-color: rgb(0,0,0);
+    position: relative;
+    margin-left: 0;
+  }
+  .listaa:hover{
+    background-color: #828282;
+  }
+  .aa{
+    margin-left: 0;
+  }
+  .logogo{
+    flex: 0.25;
+    height: 12vh;
+  }
+  .icon{
+    display: block;
+  }
+  main{
+    min-height: 250vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: 0% 70%;
+    background-repeat: no-repeat;
+    background-image: url(telescopio.jpg);
+    background-attachment: fixed;
+    position: relative;
+  }
+  .final{
+    width: 100%;
+    min-height: 160vh;
+    background-color: rgba(0,0,0,0.8);
+    background-size: all;
+  }
+  .carosoetext{
+    width: 80%;
+    height: all;
+    padding-top: 10vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .carousel{
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 1vw;
+  }
+  .carousel-item{
+    height: 60vw;
+    width: 100%;
+    background-color: rgb(0,0,0);
+    padding-left: 10vw;
+  }
+  h1{
+    width: 100%;
+    height: 8vw;
+    padding: 2vw;
+    font-size: 4vw;
+    text-align: left;
+    font-family: bahnschrift;
+    background-color: rgba(117, 117, 117, 0.7);
+  }
+  .descrição{
+    font-size: 2.25vw;
+    line-height: 5vw;
+  }
+  .redessco{
+    display: none;
+    font-family: bahnschrift;
+    font-size: 1.5vw;
+    color: white;
+    z-index: 1;
+    margin-left: 10%;
+  }
+  .sobr1, .sobr2{
+    font-size: 3vw;
+    color: white;
+    font-family: bahnschrift;
+    text-align: left;
+    z-index: 1;
+    line-height: 4vw;
+    padding-top: 2vw;
+  }
+
+  .sobreeu{
+    margin-top: 10vw;
+    flex: 0.4;
+    display: flex;
+    width: 110%;
+    margin-left: -9vw;
+    flex-direction: column;
+  }
+  .titu1, .titu2{
+    font-size: 4vw;
+    color: white;
+    font-family: bahnschrift;
+    text-align: left;
+    z-index: 1;
+  }
+  .sob1{
+    margin-bottom: 3vw;
+  }
+  .sob2{
+    margin-top: 3vw;
+  }
+  footer{
+    width: 100vw;
+    max-width: 100vw;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    position: relative;
+    bottom: 0;
+  }
+  .futa{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5vw;
+  }
+  .coluns{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .cope{
+    margin-left: 8vw;
+    padding-bottom: 5vw;
+  }
+  .copylogo{
+    width: 25vh;
+  }
+  .copy{
+    font-size: 2.5vh;
+  }
+  .colun1, .colun2,.colun3{
+    margin-left: 10vw;
+    padding-bottom: 3vw;
+  }
+  .tit1,.tit2,.tit3{
+    font-size: 4vh;
+    line-height: 8vh;
+  }
+  .col1,.col2,.col3{
+    font-size: 3vh;
+    line-height: 7vh;
+  }
+}

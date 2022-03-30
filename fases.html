@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SpacePortal | Fases da Lua</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="logo.png">
+		<link rel="stylesheet" type="text/css" href="fasespc.css">
+		<link rel="stylesheet" type="text/css" media="screen and (max-device-width:800px)" href="fasescel.css">
+		<script type="text/javascript" src="homejs.js"></script>
+	</head>
+	<body onload="load()" id="body">
+		<div id="loading">
+			<div>
+				<img src="loading.gif" style="width: 200px;">
+			</div>
+		</div>
+		<nav>
+			<a href="index.html" class="aa">
+				<div class="logotipo">
+					<img src="logotipo.png" class="logogo">
+				</div>
+			</a>			
+			<ul class="tags" id="tags">
+				<li class="tag1">
+					<a href="#" class="astronomia"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21">
+						<a href="historia.html" class="l1"><li class="lista">Astronomia Antiga</li></a>
+						<a href="constelacao.html" class="l1"><li class="lista">Constelações</li></a>
+						<a href="estacao.html" class="l1"><li class="lista">Estações do Ano</li></a>
+						<a href="antigos.html" class="l1"><li class="lista">Antigos astrônomos</li></a>
+						<a href="telescopio.html" class="l1"><li class="lista">Instrumentos</li></a>
+						<a href="fases.html" class="l1"><li class="lista">Fases da Lua</li></a>
+						<a href="eclipse.html" class="l1"><li class="lista">Eclipses</li></a>
+						<a href="solar.html" class="l1"><li class="lista">Sistema Solar</li></a>
+						<a href="escala.html" class="l1"><li class="lista">Escala do Universo</li></a>
+						<a href="tera.html" class="l1"><li class="lista">Terra</li></a>
+					</ul>
+				</li>
+				<li class="tag2">
+					<a href="#" class="astrofísica"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22">
+						<a href="doppler.html" class="l1"><li class="lista">Efeito Doppler</li></a>
+						<a href="mare.html" class="l1"><li class="lista">Efeito de Maré</li></a>
+						<a href="kepler.html" class="l1"><li class="lista">Leis de Kepler</li></a>
+						<a href="eletromagnetismo.html" class="l1"><li class="lista">Eletromagnetismo</li></a>
+						<a href="bigbang.html" class="l1"><li class="lista">Big Bang</li></a>
+						<a href="classificacao.html" class="l1"><li class="lista">Classificação Espectral</li></a>
+						<a href="diagrama.html" class="l1"><li class="lista">Diagrama HR</li></a>
+					</ul>
+				</li>
+			</ul>
+			<ul class="tagsa" id="tagsa">
+				<li class="tag1a">
+					<a href="#" class="astronomia" id="aston" onclick="click2();"><p class="astron">Astronomia <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu21a" id="menu21a">
+						<a href="historia.html" class="l1a"><li class="listaa">Astronomia Antiga</li></a>
+						<a href="constelacao.html" class="l1a"><li class="listaa">Constelações</li></a>
+						<a href="estacao.html" class="l1a"><li class="listaa">Estações do Ano</li></a>
+						<a href="antigos.html" class="l1a"><li class="listaa">Antigos astrônomos</li></a>
+						<a href="telescopio.html" class="l1a"><li class="listaa">Instrumentos</li></a>
+						<a href="fases.html" class="l1a"><li class="listaa">Fases da Lua</li></a>
+						<a href="eclipse.html" class="l1a"><li class="listaa">Eclipses</li></a>
+						<a href="solar.html" class="l1a"><li class="listaa">Sistema Solar</li></a>
+						<a href="escala.html" class="l1a"><li class="listaa">Escala do Universo</li></a>
+						<a href="tera.html" class="l1a"><li class="listaa">Terra</li></a>
+					</ul>
+				</li>
+				<li class="tag2a">
+					<a href="#" class="astrofísica" id="astof" onclick="click1();"><p class="astrof">Astrofísica <img src="seta.png" class="seta1"></p></a>
+					<ul class="menu22a" id="menu22a">
+						<a href="doppler.html" class="l1a"><li class="listaa">Efeito Doppler</li></a>
+						<a href="mare.html" class="l1a"><li class="listaa">Efeito de Maré</li></a>
+						<a href="kepler.html" class="l1a"><li class="listaa">Leis de Kepler</li></a>
+						<a href="eletromagnetismo.html" class="l1a"><li class="listaa">Eletromagnetismo</li></a>
+						<a href="bigbang.html" class="l1a"><li class="listaa">Big Bang</li></a>
+						<a href="classificacao.html" class="l1a"><li class="listaa">Classificação Espectral</li></a>
+						<a href="diagrama.html" class="l1a"><li class="listaa">Diagrama HR</li></a>
+					</ul>
+				</li>
+			</ul>
+			<a href="#" class="icon" onclick="verificaClick();">
+				&equiv;
+			</a>
+		</nav>
+		<main>
+			<div class="fundo">
+				<div class="inicio">
+					<div class="scro">
+						<a href="#conteudo"><img src="seta.png" class="scrollseta"></a>
+					</div>
+				</div>
+				<div class="final" id="conteudo">
+					<div class="titu">
+						<span class="tito">Fases da Lua</span>
+					</div>
+					<div class="artigo">
+						<div class="text">
+							<strong>O que são </strong><br>
+							<div class="image">
+								<img src="fases.png" class="imagem" alt="Fases da Lua">
+								<p class="legenda">Ilustração das fases da Lua.</p>
+							</div>
+							<p class="texto">As fases da lua representam o modo como vemos a face iluminada da Lua (a face que está voltada para o Sol), aqui da Terra. Essas fases variam de acordo com o dia do mês, e com o hemisfério em que você está posicionado, já que uma pessoa que vê a Lua do norte, enxerga o satélite natural de um ponto de vista diferente e invertido, da pessoa que o vê do sul.</p><br>
+							<strong>Por que ocorrem </strong><br>
+							<p class="texto">Esse ciclo de fases ocorre pois a Lua não é um corpo luminoso, e sua luz é apenas a luz do Sol refletida. E isso, junto com a revolução da Lua (o movimento da Lua em torno da Terra), faz com que tenhamos uma visão diferente da Lua no céu a cada dia do mês, tendo a face iluminada mudando de totalmente virada para a Terra, a face estando virada para o oposto da Terra, com 1 fase da Lua por mês.</p><br>
+							<strong>Como são classificadas </strong><br>
+							<p class="texto">Classificamos as fases da Lua em 4 fases:<br>
+							> A Lua Cheia, ocorre quando a face iluminada está completamente virada para a Terra, e o Sol e a Lua estão em direções opostas, do ponto de vista da Terra. Nessa fase, a Lua nasce aproximadamente às 18 horas e se põe aproximadamente às 6 horas, o contrário dos horários do Sol. <br>
+							> A Lua Quarto-Minguante, ocorre quando a face iluminada da Lua está virada para o leste, nessa fase, a Lua está a aproximadamente 90° a oeste do Sol. A Lua nasce aproximadamente a meia-noite, e se põe aproximadamente ao meio-dia.<br>
+							> A Lua Nova, ocorre quando a face iluminada da Lua está virada para o Sol, e por isso, nessa fase, não é possível ver a Lua no céu. Na Lua Nova, a Lua está para o lado do Sol, e assim, a Lua nasce aproximadamente às 6 horas e se põe às 18 horas, assim como o Sol.<br>
+							> A Lua Quarto-Crescente, ocorre quando a face iluminada da Lua está virada para o oeste, nessa fase, a Lua está a aproximadamente 90° a leste do Sol. A Lua nasce aproximadamente a meio-dia, e se põe aproximadamente ao meia-noite. Ela está no completo oposto da Lua Quarto-Minguante.
+							</p><br>
+							<strong>Mês sideral e período sinódico </strong><br>
+							<p class="texto">O mês sideral é considerado o tempo que a Lua demora pra dar a volta na Terra (o seu período de revolução), e tem a duração aproximada de 27,25 dias. Já o período sinídico, é o tempo que demora pra uma fase ocorrer, ou seja, o tempo entre duas Luas Novas, que tem duração aproximada de 29,5 dias. Essa diferença de tempo entre as duas, ocorre porque como a Terra também realiza o movimento de translação durante esse tempo, o Sol se desloca aproximadamente 1° por dia para o leste, do ponto de vista da Terra, e assim, no final do mês sideral, o Sol está aproximadamente 27° para o leste, e como as fases da Lua só são possíveis se ela estiver em uma posição determinada entre o Sol e a Terra, é preciso de aproximadamente mais 2 dias pra ela se deslocar 27°, e finalizar o período sinódico.</p><br>
+							<strong>Rotação da Lua </strong><br>
+							<p class="texto">Durante esse período de fases da Lua, ela mantém sempre a mesma face em direção à Terra, não importando o momento. Isso ocorre pois o seu período de revolução em torno da Terra possui a mesma duração da sua rotação, ou seja, estes movimentos estão sincronizados. Esta sincronia, porém, ocorreu porque, por muito tempo no passado, o movimento de rotação da Lua, sem sincronia, era freado pelo <a href="mare.html">Efeito de Maré</a> que a Terra exercia sobre a Lua, assim, depois de muito tempo, sincronizando os dois movimentos.</p><br>
+							<strong>Bibliografia </strong><br>
+							<p class="texto">
+								<a href="http://astro.if.ufrgs.br/lua/lua.htm" class="links">http://astro.if.ufrgs.br/lua/lua.htm</a><br>
+								<a href="https://www.if.ufrgs.br/novocref/?contact-pergunta=por-que-as-fases-da-lua-sao-distintas-nos-hemisferios-norte-e-sul" class="links">https://www.if.ufrgs.br/</a><br>
+								<a href="http://site.mast.br/exposicoes_hotsites/exposicao_temporaria_as_estacoes_do_ano/fases_da_lua.html" class="links">http://site.mast.br/</a>
+							</p>
+							<br><br><br><br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="futa">
+				<div class="cope">
+					<img src="logotipo.png" class="copylogo">
+					<span class="copy">&copy; SpacePortal 2020<br><br>
+						<a href="recom.html">Recomendações</a><br></span>
+				</div>
+				<div class="coluns">
+					<div class="colun1">
+						<span class="tit1">Astronomia</span><br>
+						<span class="col1"><a href="historia.html">Astronomia da Antiguidade</a><br><a href="fases.html">Fases da Lua</a><br><a href="constelacao.html">Constelações</a><br><a href="eclipse.html">Eclipses</a><br><a href="estacao.html">Estações do ano</a><br><a href="solar.html">Sistema Solar</a><br><a href="antigos.html">Astrônomos da antiguidade</a><br><a href="escala.html">Escala do Universo</a><br><a href="telescopio.html">Instrumentos de observação</a><br><a href="tera.html">Terra</a></span>
+					</div>
+					<div class="colun2">
+						<span class="tit2">Astrofísica</span><br>
+						<span class="col2"><a href="doppler.html">Efeito Doppler</a><br><a href="">Efeito de Maré</a><br><a href="kepler.html">Leis de Kepler</a><br><a href="eletromagnetismo.html">Espectro eletromagnético</a><br><a href="bigbang.html">Big Bang</a><br><a href="classificacao.html">Classificação Espectral</a><br><a href="diagrama.html">Diagrama HR</a></span>
+					</div>
+					<div class="colun3">
+						<span class="tit3">Contato</span><br>
+						<span class="col3"><a href="https://twitter.com/mousedesvio">Twitter</a><br><a href="https://www.instagram.com/pedroand6/">Instagram</a><br><a href="mailto:redbrickcar2@gmail.com">redbrickcar2@gmail.com</a><br></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Bibliotecas Javascript aqui -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script type="text/javascript" src="https://getbootstrap.com.br/docs/4.1/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>
